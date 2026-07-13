@@ -1,0 +1,200 @@
+/* =========================================================
+   YVES PFLIEGER — COMPLÉMENTS LOT 4
+   S'appuie sur les tokens définis dans main.css
+   (à charger APRÈS main.css)
+   ========================================================= */
+
+/* ---------- Accordéon FAQ ---------- */
+.faq-group + .faq-group { margin-top: 56px; }
+.faq-group h2 { margin-bottom: 6px; }
+
+.faq-list { max-width: 760px; margin-top: 24px; }
+
+.faq-item {
+  border-bottom: 1px solid var(--navy-border);
+}
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 2px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.08rem;
+  color: var(--ink);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  color: var(--gold);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after { content: "\2212"; }
+.faq-item .faq-answer {
+  padding: 0 2px 24px;
+  max-width: 68ch;
+}
+.faq-item .faq-answer p { margin: 0; }
+
+/* ---------- À propos : portrait + chronologie ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.portrait-card {
+  text-align: center;
+  border-top: 2px solid var(--gold);
+}
+.portrait-mark {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  color: var(--gold-bright);
+  background: var(--gold-mist);
+}
+.portrait-card h3 { margin-bottom: 2px; }
+.portrait-card .role {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--mist-2);
+}
+.portrait-card .role-detail {
+  font-size: 14px;
+  color: var(--mist);
+  margin-top: 14px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  border-left: 1px solid var(--navy-border);
+}
+.timeline li {
+  position: relative;
+  padding: 0 0 30px 30px;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 3px var(--void);
+}
+.timeline .year {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+.timeline p { margin: 0; color: var(--mist); font-size: 14.5px; }
+
+/* ---------- Contact : formulaire ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.form-card { border-top: 2px solid var(--gold); }
+
+.form-field { margin-bottom: 20px; }
+.form-field label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--mist);
+  margin-bottom: 8px;
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  background: var(--navy-light);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 1px;
+  border-color: var(--gold);
+}
+.form-field textarea { min-height: 130px; resize: vertical; }
+
+.form-note {
+  font-size: 13px;
+  color: var(--mist-2);
+  margin-top: 14px;
+}
+
+.contact-card { background: linear-gradient(160deg, var(--navy), var(--violet) 160%); }
+.contact-card h3 { color: var(--ink); }
+
+.info-list { list-style: none; margin: 22px 0 0; padding: 0; }
+.info-list li {
+  display: flex;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--navy-border);
+}
+.info-list li:first-child { border-top: none; }
+.info-list strong {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold-bright);
+  margin-bottom: 3px;
+}
+.info-list span { font-size: 14.5px; color: var(--ink); }
+
+.info-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+/* ---------- Responsive ----------
+   Harmonisé sur le même seuil que main.css (1000px) pour éviter
+   une zone intermédiaire (861–999px) où le menu est déjà masqué
+   mais où about-grid / contact-grid restaient encore en 2 colonnes. */
+@media (max-width: 1000px) {
+  .about-grid, .contact-grid { grid-template-columns: 1fr; }
+}

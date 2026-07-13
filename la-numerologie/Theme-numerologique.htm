@@ -1,0 +1,607 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+    <meta id="DESCRIPTION" content="Etude num&#233;rologique personnelle - Calendrier et Pr&#233;visions num&#233;rologiques 
+		g&#233;n&#233;r&#233; par le logiciel Num&#233;rologie par Yves Pflieger." />
+    <meta id="KEYWORDS" content="logiciel, logiciel de num&#233;rologie, YvesPflieger, Yves Pflieger" />
+    <title>Num&#233;rologie</title>
+
+    </script>
+    <style type="text/css">
+        html
+        {
+			font-size: 100%;
+            background-color: #FFFFFF; /*#FFF0F5;*/
+        }
+        body
+        {
+			font-size: 1em;
+            background-color: #FFFFFF; /*#FFF0F5;*/
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        span.titreNom
+        {
+            font-size: 40px;
+            text-align: center;
+            color: Teal;
+            font-style: italic;
+            font-family: "Segoe UI" , "Segoe WP Semilight", "Georgia" , "Times New Roman";
+            font-weight: 600;
+        }
+        h1
+        {
+            font-size: 2.2em;
+            text-align: center;
+            letter-spacing: 0px;
+            color: white; /*#333333;*/
+            background-color: #1BA1E2;
+            font-family: "Segoe UI" , "Segoe WP Semilight" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: normal;
+            padding: 5pt 0 10pt 0;
+            margin-top: 0px;
+            margin-bottom: 25px;
+        }
+        h2
+        {
+            font-size: 1.8em;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #333333;
+            line-height: 130%;
+            font-family: "Segoe UI", Arial, Tahoma, Verdana, Calibri;
+            font-weight: normal;
+            margin-top: 0px;
+            margin-bottom: 15px; /*font-variant: small-caps; font-style: italic;*/
+        }
+		h3
+        {
+            font-size: 1.7em;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #1ba1e2;
+            line-height: 30px;
+            font-family: "Segoe UI", "Segoe UI Light", "Segoe WP" , Arial, Tahoma, Verdana, Calibri;
+            font-variant: small-caps;
+            font-weight: normal;
+            margin-top: 0px;
+            margin-bottom: 15px;
+        }
+        h4
+        {
+            font-size: 1.55em;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #333333;
+            line-height: 28px;
+            font-family: "Segoe UI", "Segoe WP" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: 600;
+            margin-top: 0px;
+            margin-bottom: 35px;
+        }
+        span.lien
+        {
+            font-size: 1.2em;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #333333;
+            line-height: 130%;
+            font-family: "Segoe UI" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: normal;
+            margin-top: 0px;
+            margin-bottom: 18px;
+            padding: 0 0 4px 0;
+        }
+        span.commentaire
+        {
+            font-size: 1.2em;
+            text-align: left;
+            color: #339933;
+            font-style: normal;
+            font-family: "Segoe UI" , "Segoe WP Semibold" , "Georgia" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: 400;
+            margin-bottom: 10pt; /*background-color: #1BA1E2;*/
+            display: block; /* letter-spacing: 1px;         line-height: 31px; */
+        }
+        p, td
+        {
+            font-size: 1.15em;
+            line-height: 1.3em;
+            text-align: justify; /* left; justify; */
+            letter-spacing: 0px;
+            color: Black; /*#666666;*/
+            font-family: "Segoe UI" , "Segoe WP" , Arial, Tahoma, Verdana, Calibri;
+            /*font-weight: normal;*/
+            margin-top: 0px;
+            margin-bottom: 30px; /* text-indent: 5%; */
+        }
+        p.datenaissance
+        {
+            font-size: 1.6em;
+            color: #1ba1e2;
+            font-family: "Segoe UI", ", ", "Segoe WP""";
+            font-variant: small-caps;
+            margin-top: 0px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        p.sousnombre
+        {
+            font-size: 1.1em;
+            background-color: #E8E8E8;
+            padding: 15px 25px 15px 25px;
+        }
+        ul
+        {
+            color: #666666;
+            font-family: "Segoe WP Semilight" , "Segoe UI";
+            font-weight: normal;
+            letter-spacing: 0px;
+            list-style-type: none;
+            margin-bottom: 30px;
+            margin-top: 18px;
+            margin-left: 0px;
+            text-align: left;
+        }
+        ol
+        {
+			font-size: 1.2em;
+            line-height: 130%;
+            margin-right: 30px;
+            text-align: justify;
+            list-style-type: upper-roman;
+        }
+        li
+        {
+            color: #666666;
+            font-family: "Segoe WP" , "Segoe UI";
+            font-weight: normal;
+            letter-spacing: 0px;
+            margin: 0; /* margin-bottom: 10px; */
+            text-align: left;
+            padding: 5px 5px 5px 10px; /*--Adds padding around each item--*/
+        }
+        .itemBody
+        {
+            font-size: 1.15em;
+            color: #666666;
+            display: block;
+            font-family: "Segoe WP Semilight" , "Segoe UI";
+            font-weight: normal;
+            letter-spacing: 0px;
+            line-height: 32px;
+            margin-left: 50px;
+            margin-top: -35px;
+            text-align: left;
+        }
+        .accent
+        {
+            font-size: 1.15em;
+            color: #1ba1e2;
+            font-family: "Segoe WP Semilight" , "Segoe UI";
+            font-weight: normal;
+            letter-spacing: 0px;
+            line-height: 32px;
+            list-style-type: none;
+            text-align: left;
+        }
+        A
+        {
+            text-decoration: none; /* underline; */
+            color: WindowText;
+        }
+        table
+        { 
+			text-align: center;
+			border-collapse:collapse;			
+        }
+        th 
+		{
+         	font-family:"Segoe WP Semilight" , "Segoe UI", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+		}
+        .Violet
+        {
+            font-size: 1em;
+            color: #A200FF;
+            font-family: "Segoe WP Semilight" , "Segoe UI" , Arial, Tahoma, Verdana, Calibri;
+        }
+        .piedDePage
+        {
+            font-size: 1em;
+            letter-spacing: 0px;
+            color: #339933; /*line-height: 28px;*/
+            font-family: "Segoe UI" , "Segoe WP" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: normal;
+			margin-bottom: 0px;
+        }
+		.anneepAffectifClef
+		{
+		}
+    </style>
+</head>
+<body>
+
+<h1>Andr&#233;e Fran&#231;oise Lacombe</h1>
+
+<p class='datenaissance'>mardi 25 ao&#251;t 1970</p>
+
+<center>TABLE DES MATI&#200;RES</center>
+
+    <ol>
+        <li>VOTRE PERSONNALIT&#201;: SPH&#200;RE SOCIALE
+            <ol style="list-style-type:none">
+                <li><a href="#Expression">Nombre d'Expression</a></li>
+                <li><a href="#Elan">&#201;lan spirituel</a></li>
+                <li><a href="#Moi">Moi Intime</a></li>
+                <li><a href="#Inclusion">Inclusion</a></li>
+            </ol>
+        </li>
+        <li>SPH&#200;RE FAMILIALE
+            <ol style="list-style-type:none">             
+                <li><a href="#Nombre actif">Nombre actif</a></li>
+                <li><a href="#Lettre">Pierre Angulaire</a></li>
+				<li><a href="#Heredite">Nombre d'H&#233;r&#233;dit&#233;</a></li>
+            </ol>
+        </li>
+        <li>VOS POTENTIELS
+            <ol style="list-style-type:none">
+                <li><a href="#JourNaissance">Jour de naissance</a></li>
+				<li><a href="#NbLettre">Nombre de lettres de l'&#233;tat civil</a></li>
+             <!--   <li><a href="#Eros">Comportement &#233;rotique</a></li>  -->
+            </ol>
+        </li>
+        <li>PLAN DE VIE
+            <ol style="list-style-type:none">
+                <li><a href="#Chemin">Chemin de Vie</a></li>
+                <li><a href="#Cycle">Les 3 Cycles de votre vie</a></li>
+            </ol>
+        </li>
+    </ol>
+
+    <h2>
+        Votre &#233;tude num&#233;rologique personnelle</h2>
+    <p>
+        La Num&#233;rologie r&#233;pond &#224; ce besoin l&#233;gitime propre &#224; chacun d'entre nous : mieux se
+		conna&#238;tre, comprendre notre structure caract&#233;rielle. Une compr&#233;hension plus fine 
+		de soi de contribuant &#224; une meilleure coh&#233;rence personnelle et &#224; davantage de 
+		fluidit&#233; relationnelle.</p>
+    
+    <p>
+        La Num&#233;rologie utilise <strong>la symbolique psychologique des nombres et des lettres.</strong>
+        A partir de donn&#233;es aussi simples que votre date et nom complet de naissance, la 
+		Num&#233;rologie est en mesure de dresser votre cartographie caract&#233;rielle. Une discipline
+		&#233;sot&#233;rique particuli&#232;rement pratique et apte &#224; fournir un &#233;clairage utile sur la 
+		personnalit&#233; avec une pertinence assez importante. La num&#233;rologie s'occupe &#233;galement de 
+		pr&#233;visions. Elle permet de mettre en &#233;vidence les grandes influences auxquelles nous sommes 
+		soumis tel un capitaine de navire qui s'informe sur l'orientation des vents et des 
+		courants marins qu'il va rencontrer sur sa route. A vous ensuite de d&#233;cider 
+		d'&#233;viter les turbulences, d'affronter la temp&#234;te ou de rester tranquillement chez vous.</p>
+    <p>
+        L'analyse de votre nom et pr&#233;noms est bas&#233;e sur la correspondance lettre-nombre
+        suivante : a=1, b=2, c=3, etc.</p>
+    <center>
+        <table border="1" cellspacing="0">
+            <thead>
+                <tr align="center">
+                    <td style="width: 35px">
+                        <strong>1</strong></td>
+                    <td style="width: 35px">
+                        <strong>2</strong></td>
+                    <td style="width: 35px">
+                        <strong>3</strong></td>
+                    <td style="width: 35px">
+                        <strong>4</strong></td>
+                    <td style="width: 35px">
+                        <strong>5</strong></td>
+                    <td style="width: 35px">
+                        <strong>6</strong></td>
+                    <td style="width: 35px">
+                        <strong>7</strong></td>
+                    <td style="width: 35px">
+                        <strong>8</strong></td>
+                    <td style="width: 35px">
+                        <strong>9</strong></td>
+                </tr>
+            </thead>
+            <tr align="center">
+                <td>
+                    A</td>
+                <td>
+                    B</td>
+                <td>
+                    C</td>
+                <td>
+                    D</td>
+                <td>
+                    E</td>
+                <td>
+                    F</td>
+                <td>
+                    G</td>
+                <td>
+                    H</td>
+                <td>
+                    I</td>
+            </tr>
+            <tr align="center">
+                <td>
+                    J</td>
+                <td>
+                    K</td>
+                <td>
+                    L</td>
+                <td>
+                    M</td>
+                <td>
+                    N</td>
+                <td>
+                    O</td>
+                <td>
+                    P</td>
+                <td>
+                    Q</td>
+                <td>
+                    R</td>
+            </tr>
+            <tr align="center">
+                <td>
+                    S</td>
+                <td>
+                    T</td>
+                <td>
+                    U</td>
+                <td>
+                    V</td>
+                <td>
+                    W</td>
+                <td>
+                    X</td>
+                <td>
+                    Y</td>
+                <td>
+                    Z</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <p>
+            &#233;&#232;&#234;&#231; = 1; &#246; = 2; &#249;&#251; = 3; &#238;&#235; = 5; &#244;&#228; = 6; &#252; = 8; &#224;&#226;&#239; = 9</p>
+    </center>
+    
+<h2>I. VOTRE PERSONNALIT&#201;: SPH&#200;RE SOCIALE</h2>
+
+<p>Chaque personnalit&#233; a <strong>plusieurs facettes</strong> et il est faux de croire que l'on puisse d&#233;crire le caract&#232;re de chacun par un seul qualificatif. Votre personnalit&#233;, utilis&#233;e dans une sph&#232;re sociale large, s'appuie en fait sur trois aspects majeurs, l'Expression, le Moi Intime et l'&#201;lan spirituel.</p>
+
+
+
+<h2>Nombre d'Expression<a id="Expression"></a></h2>
+
+<p>C'est la valeur cl&#233; de la Num&#233;rologie. Ce nombre repr&#233;sente votre potentiel d'expression, de contact; c'est aussi l'image que vous pouvez donner aux autres. Tandis que la vibration issue du seul pr&#233;nom usuel d&#233;crit le comportement au sein du cercle restreint de la famille et des amis intimes, la vibration issue du nom complet de naissance gouverne la personnalit&#233; utilis&#233;e dans la sph&#232;re sociale large. C'est donc un nombre tr&#232;s important pour cerner le comportement social d'une personne, pour l'aider &#224; s'orienter dans sa vie professionnelle (avec l'&#201;lan spirituel et le Chemin de vie). On l'utilise &#233;galement pour &#233;valuer les possibilit&#233;s d'entente entre deux personnes. Un sous-emploi des capacit&#233;s du Nombre d'Expression peut s'expliquer par des contradictions internes, des complexes mais aussi par une certaine instabilit&#233; au niveau du Moi Intime. Dans ce cas, il faut d'abord s'employer &#224; raffermir sa base profonde (appuis et besoins propre &#224; la sp&#233;cificit&#233; de son Moi Intime), avant de se sentir &#224; nouveau apte &#224; bien s'exprimer avec la vibration de son nombre d'Expression. De m&#234;me, lorsqu'une personne choisit brusquement de se retrancher dans son Moi Intime, c'est que les conditions n&#233;cessaires pour bien s'exprimer ne sont plus r&#233;unies (stress, conflit). La valeur du Nombre d'Expression est calcul&#233;e par la somme r&#233;duite des valeurs num&#233;rologiques de <strong>toutes les lettres</strong> de l'&#233;tat civil &#224; la naissance. Pour affiner l'interpr&#233;tation de cette vibration, on prendra en compte les nuances apport&#233;es par l'&#201;lan spirituel et secondairement par la Pierre Angulaire (initiale du pr&#233;nom). Ainsi, un &#201;lan spirituel 2 ou 6 adoucira la relative duret&#233; d'une Expression de valeur 1 ou 8 (tout comme le fera aussi une initiale B ou I).</p>
+
+<pre style="font-size:1.2em">Andr&#233;e Fran&#231;oise Lacombe
+154915 691516915 3136425 = 92 = 11/2<!-- Yves Pflieger YvesPflieger--></pre>
+
+<p>Vous avez le nombre 11 pour Expression : <strong>Personnalit&#233; inspir&#233;e.</strong></p>
+
+<p>Il s'agit d'un ma&#238;tre-nombre de tr&#232;s forte vibration et il est plut&#244;t rare de vibrer pleinement &#224; ce niveau. La plupart des gens s'exprimeront une octave en dessous c'est-&#224;-dire au niveau 2 (dont vous trouverez l'interpr&#233;tation plus loin), certains h&#233;ritant au passage d'une partie des pr&#233;dispositions li&#233;es &#224; la vibration 11. La grande diff&#233;rence se situant au niveau de la capacit&#233; &#224; d&#233;cider, &#224; prendre les choses en main, &#224; mettre en pratique ses intuitions. Des qualit&#233;s insuffisamment d&#233;velopp&#233;es chez le porteur d'une vibration 2 qui se compla&#238;t trop souvent dans une certaine passivit&#233;.</p>
+
+<p>Une Expression de type 11 est synonyme d'&#233;veil, de vitalit&#233; et d'inspiration. Sans aucun doute, vous donnez l'image d'un &#234;tre sortant de l'ordinaire. Votre fonctionnement est intuitif, inventif, souvent autonome parfois solitaire. Vous vous appuyez sur votre force morale et vos convictions profondes. Toutefois cette solidit&#233; n'est pas une donn&#233;e constante chez vous. Il vous arrive aussi de traverser des phases de nervosit&#233;, d'instabilit&#233;. Bien utilis&#233;es, vos facult&#233;s vous rendront plus intelligente et plus ambitieuse que la moyenne. De fait, vous appartenez &#224; l'&#233;lite des individus qui aspirent &#224; un id&#233;al, qui cherchent &#224; accro&#238;tre leurs connaissances et &#224; s'&#233;lever sur un plan personnel. Vous faites d'ailleurs montre de t&#233;nacit&#233; dans vos options sans doute guid&#233;e par l'id&#233;e d'avoir un destin original. Ce n'est pas faux, mais ayez la prudence de toujours garder les pieds sur terre.</p>
+
+<p>Votre puissance de travail est assez grande d&#232;s lors que vous &#234;tes motiv&#233;e. Vous b&#233;n&#233;ficiez souvent d'une r&#233;elle inspiration qui vient compl&#233;ter votre intelligence plut&#244;t vive. Les plus chanceuses et les plus stables au sein de cette vibration auront acc&#232;s &#224; des dons psychiques sp&#233;ciaux. Pour les autres, il s'agira plus simplement d'une &#233;nergie cr&#233;ative assortie d'une certaine clairvoyance, atouts qu'ils mettront ais&#233;ment &#224; profit d&#232;s qu'il s'agit de prendre une d&#233;cision, ma&#238;triser une situation, mettre en pratique ses intuitions ou faire partager ses id&#233;es. Quand vous &#234;tes au meilleur de vous-m&#234;me, votre personnalit&#233; et votre jaillissement captivent litt&#233;ralement les autres. Vous savez donner des informations logiques enrichies d'une certaine perspicacit&#233; intuitive et les gens ont tout int&#233;r&#234;t &#224; vous &#233;couter attentivement, &#224; suivre vos conseils ! En fait, vous avez tr&#232;s souvent parfaitement raison. Il est d'ailleurs courant que vous soyez autodidacte et que votre savoir soit plus inn&#233; que livresque ou scolaire. Id&#233;alement, votre objectivit&#233; vous permet de trouver des solutions sans &#234;tre entra&#238;n&#233;e dans des complications &#233;motionnelles. Ce magn&#233;tisme vous aidera aussi dans le domaine amoureux. On vous trouve plut&#244;t attirante m&#234;me si en couple votre exigence naturelle et recherche d'id&#233;al gagneraient &#224; s'assouplir quelque peu.</p>
+
+<p>Quand elle n'est pas ma&#238;tris&#233;e, cette vibration peut engendrer une forte tension mentale et &#233;motionnelle. Sans doute parce que vous d&#233;sirez la perfection avant m&#234;me d'avoir pu vous en donner les moyens, avant m&#234;me de vous &#234;tre d&#233;faite de vos contradictions internes. Pas d'exc&#232;s de pr&#233;cipitation. Relaxez-vous. Tachez &#233;galement de ne pas vous croire trop sup&#233;rieure malgr&#233; vos ind&#233;niables qualit&#233;s. Evitez notamment l'intol&#233;rance et les voies contestataires - vous vous r&#233;voltez facilement. Gardez toujours le sens des r&#233;alit&#233;s pour ne pas vous &#233;garer. Utilisez vos dons de mani&#232;re positive, c'est-&#224;-dire pour votre propre &#233;volution mais aussi pour aider les autres.</p>
+
+<h3>Orientation professionnelle</h3>
+
+<p>Pour vous le choix est large. Vous devriez vous r&#233;aliser avec succ&#232;s dans le domaine qui vous int&#233;resse. Il est probable que vous acc&#233;diez &#224; une certaine reconnaissance publique car vous &#234;tes capable d'amener d'autres personnes dans votre sillage (sens des responsabilit&#233;s, capacit&#233;s de commandement, ascendant sur autrui). Mais g&#233;n&#233;ralement votre int&#233;r&#234;t irait plut&#244;t &#224; votre "mission" personnelle. Pr&#233;cisons que vous supportez assez mal d'&#234;tre plac&#233;e sous tutelle en particulier si elle est assortie d'injustice ou si elle &#233;mane d'une personne que vous consid&#233;rez comme moins intelligente et sens&#233;e que vous. Bien entendu, le choix d'une profession ne d&#233;pend pas du seul Nombre d'Expression. Cette d&#233;cision peut &#233;galement &#234;tre li&#233;e &#224; votre Chemin de Vie, votre &#201;lan spirituel ou votre Jour de Naissance.</p>
+
+<p>Vous avez le nombre 2 pour Expression : <strong>Personnalit&#233; coop&#233;rative, sensible et douce.</strong></p>
+
+<p>Cette vibration correspond &#224; une personnalit&#233; d&#233;licate, sensible et accommodante. Votre mode de fonctionnement est bas&#233; sur la souplesse, notamment par des aptitudes certaines &#224; la coop&#233;ration, au partenariat, mais s'appuie &#233;galement sur des qualit&#233;s de coeur telles que gentillesse, affection, g&#233;n&#233;rosit&#233; et recherche d'harmonie. Cette vibration est sans aucun doute l'une des plus agr&#233;able &#224; c&#244;toyer. Elle conf&#232;re en outre une grande r&#233;ceptivit&#233; d'o&#249; r&#233;sulte tout naturellement une imagination f&#233;conde souvent renforc&#233;e par une bonne intuition. Toujours aimable, g&#233;n&#233;ralement sinc&#232;re et digne de confiance, vous &#234;tes assur&#233;ment l'associ&#233;e indispensable.</p>
+
+<p>Vos activit&#233;s et votre comportement d&#233;notent un grand besoin de compagnie. Vous avez n&#233;anmoins tendance &#224; subir ou participer aux &#233;v&#233;nements plut&#244;t qu'&#224; les provoquer ou les ma&#238;triser. Il est probable que vous pr&#233;f&#233;riez coop&#233;rer avec les autres, travailler dans le sillage d'un leader plut&#244;t que de d'innover ou de d&#233;cider seule. Cette derni&#232;re remarque doit cependant &#234;tre relativis&#233;e si d'autres &#233;l&#233;ments majeurs de votre th&#232;me - notamment l'&#201;lan ou la vibration de votre jour de naissance - valent 1, 3, 5 ou 8. G&#233;n&#233;ralement, vous &#234;tes tr&#232;s &#224; l'aise dans une ambiance sereine et chaleureuse o&#249; vos ind&#233;niables qualit&#233;s de collaboratrice pourront pleinement s'exprimer. Vous ex&#233;cutez consciencieusement les consignes et veillez aux moindres d&#233;tails. Vous pouvez m&#234;me &#234;tre amen&#233;e &#224; pressentir les besoins d'autrui et devancer les demandes. On vous appr&#233;ciera pour votre gentillesse, votre modestie, votre patience et votre sens de la persuasion. Par vos dons de conciliation, de diplomatie et surtout votre sens du d&#233;tail, vous &#234;tes la personne indispensable &#224; tous ceux qui pr&#233;f&#232;rent se concentrer sur les d&#233;cisions et les grandes lignes car la r&#233;ussite d'un projet ne peut souffrir de superficialit&#233; ni de confrontations st&#233;riles. De plus, vous poss&#233;dez une excellente m&#233;moire, ce qui est un atout non n&#233;gligeable.</p>
+
+<p>Qu'il s'agisse de votre entourage priv&#233; ou professionnel, tout le monde s'accordera &#224; reconna&#238;tre et appr&#233;cier votre amabilit&#233;, votre tact et votre sens de l'accueil. Il ne s'agit pas vraiment d'une facilit&#233; &#224; initier la relation - vous restez volontiers r&#233;serv&#233;e, souvent par timidit&#233; - telle qu'on la conna&#238;t pour les porteurs d'une vibration 3 ou 5, mais plut&#244;t de la qualit&#233; de votre contact humain. Spontan&#233;it&#233;, simplicit&#233; et chaleur dans votre accueil font que l'on se sent bien aupr&#232;s de vous. Il est probable que cette affabilit&#233; suscite les confidences et favorise les amiti&#233;s. Mais ne croyez pas que la facette amicale et diplomate de votre personnalit&#233; soit votre seul atout pour r&#233;ussir car votre intuition et votre charme vous seront, &#224; l'occasion, &#233;galement tr&#232;s utiles pour trouver l'aide n&#233;cessaire.</p>
+
+<p>Votre grande r&#233;ceptivit&#233;, votre sensibilit&#233; et votre imagination sont en fait des facult&#233;s &#224; double tranchant. Si elles pr&#233;sentent d'ind&#233;niables avantages pour toutes les formes de collaboration, elles sont en revanche tributaires de votre &#233;tat d'esprit. Il vous est indispensable d'avoir une base sereine et stable en particulier dans vos rapports avec les autres car votre &#233;motionnel r&#233;agit assez mal &#224; la tension et aux disputes. Dans ces cas-l&#224;, vous vivez avec la crainte d'une r&#233;action virulente de votre interlocuteur et adoptez une attitude passive et bon enfant en esp&#233;rant &#224; la fois apaiser la discussion et cacher votre instabilit&#233; &#233;motionnelle naissante. Votre besoin de s&#233;curit&#233; affective et votre peur des frictions pourraient &#224; certains moments de votre vie &#234;tre tels que vous conc&#233;deriez trop de terrain, trop vite afin de pr&#233;server votre paix (&#224; relativiser selon les caract&#233;ristiques de votre Moi Intime). Tant que vous aurez le sentiment d'&#234;tre li&#233;e ou d&#233;pendante de votre entourage vous serez fragile &#224; l'&#233;gard des d&#233;saccords et des critiques ! Apprenez &#224; compter davantage sur vous-m&#234;me, &#224; acqu&#233;rir plus d'autonomie, les critiques cesseront alors de vous perturber et les "bras de fer" ne vous feront plus peur. Sinon, &#233;vitez les environnements agressifs qui perturbent votre structure sensible, restez en-dehors des altercations et m&#233;nagez-vous des zones de tranquillit&#233;. Apprenez &#233;galement &#224; bien &#233;valuer les personnes que vous croisez sur votre route car votre gentillesse attirera immanquablement des profiteurs.</p>
+
+<p>En fait, votre m&#233;canisme interne est assez complexe. Derri&#232;re votre r&#233;serve, votre attitude souriante et calme, se cachent parfois des acc&#232;s de repli sur soi, des phases d&#233;pressives dues &#224; vos fr&#233;quentes remises en cause int&#233;rieures. Celles-ci s'expliquent par vos &#233;lans contradictoires qui un jour vous poussent &#224; l'action puis le lendemain &#224; la passivit&#233;. On peut parler &#224; l'identique de l'opposition de votre grande r&#233;ceptivit&#233; de sensations avec la relative lenteur de votre comportement et de vos r&#233;flexes. Vous &#234;tes intuitive mais pourtant n'exploitez pas compl&#232;tement cet avantage. D'un c&#244;t&#233; vous avez le sens du d&#233;tail, &#234;tes r&#233;aliste et de l'autre, vous faites preuve d'une affligeante ou touchante - selon les appr&#233;ciations - na&#239;vet&#233;. Il vous arrive &#233;galement de vous laisser submerger par votre imagination au point de dramatiser une situation qui ne le m&#233;rite pas. Veillez &#224; ce que votre douceur naturelle ne vous pousse pas &#224; la passivit&#233;, &#224; la d&#233;pendance et peut-&#234;tre m&#234;me au laisser-aller lorsque vous ne croyez plus &#224; rien. Tout cela fait d&#233;sordre et n&#233;cessite une bonne reprise en main. T&#226;chez alors d'adopter un r&#233;gime alimentaire l&#233;ger et sain. Pratiquez une activit&#233; physique compl&#232;te et r&#233;guli&#232;re pour cr&#233;er un effet stimulant sur votre corps et votre psychisme. Et surtout, d&#233;partissez-vous de cette possible tendance &#224; trop vous appuyer sur les autres, &#224; vous accrocher de fa&#231;on inopportune &#224; celui que vous avez pris pour guide car vous finirez par &#234;tre un fardeau pour lui avec tous les risques de rejet que cela comporte. Si vous tombez dans ce travers, c'est que vous doutez de votre capacit&#233; &#224; g&#233;rer votre vie vous-m&#234;me. Et le tort en revient &#224; votre imaginaire et &#224; votre c&#244;t&#233; influen&#231;able. Mieux vaut, au contraire, prendre plaisir &#224; utiliser vos dons de mani&#232;re active et surtout bien comprendre la diff&#233;rence de nuance entre collaboration et d&#233;pendance.</p>
+
+<p>Vous trouverez certainement votre bien-&#234;tre dans le mariage car vous n'aimez gu&#232;re la solitude. Vous aimez donner, faire plaisir mais votre besoin d'amour n'est pas moins grand. Toutefois, il serait pr&#233;f&#233;rable d'&#234;tre tout &#224; fait s&#251;re de vos sentiments avant de vous marier. Ne vous unissez pas pour un simple d&#233;sir de s&#233;curit&#233; mat&#233;rielle et affective. D'une mani&#232;re g&#233;n&#233;rale, vous &#234;tes tr&#232;s sensible aux d&#233;tails concernant l'ambiance, la tendresse r&#233;ciproque, la propret&#233;. Vous &#234;tes romantique, attach&#233;e au pass&#233; tout en &#233;tant pleine de fantaisie. Dans votre profession comme en amour, vous appr&#233;ciez beaucoup que l'on vous complimente, que l'on fasse attention &#224; vous, que l'on vous appr&#233;cie. Parfois, il serait pr&#233;f&#233;rable d'apprendre &#224; exposer vos souhaits directement et de discuter des choses qui vous tracassent. Par faiblesse, vous pourriez vous laissez pas tenter par la dissimulation et la d&#233;formation des faits. Pourtant bien des probl&#232;mes se r&#233;solvent facilement d&#232;s lors qu'ils sont mis "en pleine lumi&#232;re". Restez toujours dans la clart&#233; et n'ayez pas peur de d&#233;fendre vos opinions et vos droits.</p>
+
+<h3>Orientation professionnelle</h3>
+
+<p>Vous l'avez devin&#233;, toutes les activit&#233;s de second (assistant, employ&#233;, secr&#233;taire), les r&#244;les de m&#233;diateur et les professions faisant intervenir la chaleur humaine et le service (personnel soignant, ma&#238;tresse d'&#233;cole, nurse, etc.) vous conviennent. D&#232;s lors que vous b&#233;n&#233;ficiez d'un cadre qui vous s&#233;curise o&#249; vous pouvez travailler en &#233;quipe, vous vous &#233;panouissez et remplissez probablement vos taches mieux que quiconque. Cette structure vous aide &#224; mettre en valeur vos dons et vos excellentes capacit&#233;s de collaboration, de diplomatie ce qui, parfois, peut vous conduire jusqu'aux sommets. Vous vous d&#233;brouillez aussi fort bien dans les activit&#233;s commerciales, l&#224; o&#249; il faut n&#233;gocier, coop&#233;rer avec le client ainsi que dans tous les m&#233;tiers exigeant une certaine minutie ou faisant appel &#224; l'imagination. Si vous avez par ailleurs un don pour l'&#233;criture, vous feriez une bonne romanci&#232;re. Les &#233;pouses prendront tr&#232;s &#224; coeur leur statut de ma&#238;tresse de maison m&#234;me si par ailleurs elles sont amen&#233;es &#224; exercer une activit&#233; de compl&#233;ment. Elles joueront certainement un r&#244;le cl&#233; pour la bonne ambiance et les affaires du couple. Notez que le choix d'une profession ne d&#233;pend pas du seul Nombre d'Expression. Cette d&#233;cision peut &#233;galement &#234;tre influenc&#233;e par votre Chemin de Vie, votre &#201;lan spirituel ou votre Jour de Naissance.</p>
+
+<p class="sousnombre">Ce trait de caract&#232;re a pour racine 92. La sensibilit&#233; et l'amabilit&#233; naturelle du sujet se voient enrichies, avec cette racine, par une ouverture d'esprit et une inspiration qui lui apportent une envergure accrue. De beaux fruits sont envisageables. Le sujet trouve son &#233;panouissement &#224; travers des actions altruistes et id&#233;alistes. Pacifique par nature, il doit toutefois veiller &#224; ne pas laisser sa grande sensibilit&#233; s'emballer sinon des tensions internes et des probl&#232;mes relationnels sont &#224; craindre. Peut indiquer une relation sentimentale avec une personne &#233;trang&#232;re.</p>
+
+<h2>&#201;lan spirituel<a id="Elan"></a></h2>
+
+<p>L'&#201;lan spirituel correspond &#224; nos motivations profondes, &#224; ce qui est important pour nous. Cette vibration influe sur nos choix, nos aspirations et nos options sentimentales m&#234;me si nous n'en avons pas toujours conscience. Son influence vient donc moduler l'axe principal de la personnalit&#233; donn&#233; par le nombre d'Expression (notre comportement usuel en soci&#233;t&#233;). Ainsi, la personnalit&#233; tr&#232;s dynamique propre &#224; un nombre d'Expression de valeur 8 sera durcie par un &#201;lan de type 1, 4, 5, 8 ou 22 et nuanc&#233;e par un &#201;lan 3, 7 ou 11. Seules les vibrations de valeur 2, 6 ou 9 peuvent adoucir une Expression de type 8. L&#8217;&#201;lan spirituel se calcule gr&#226;ce &#224; la somme r&#233;duite des <strong>voyelles</strong> de l'&#233;tat civil &#224; la naissance.</p>
+
+<pre style="font-size:1.2em">Andr&#233;e Fran&#231;oise Lacombe
+1   15   1  69 5  1 6  5 = 40 = 4</pre>
+
+<p><strong>Votre &#201;lan spirituel est le nombre 4</strong>. Cet aspect du caract&#232;re, relatif aux motivations, vient nuancer la personnalit&#233; usuelle (l'Expression c'est-&#224;-dire le descriptif "qui est-elle ?") en apportant une large part de s&#233;rieux et des accents plus sobres. Nous avons l&#224; une femme digne de confiance aspirant &#224; la s&#233;curit&#233; et &#224; une vie bien ordonn&#233;e dans sa sph&#232;re priv&#233;e autant que professionnelle. Sa motivation va vers une existence s&#233;rieuse sans superficialit&#233; ni agitation. Les paillettes ne l'int&#233;ressent pas ; son int&#233;r&#234;t se porte aux valeurs s&#251;res que sont sa famille, sa maison, ses projets de vie. Son c&#244;t&#233; mat&#233;rialiste fait qu'elle appr&#233;cie les plaisirs et avantages du confort. Pour autant, il est rare que l'argent lui monte &#224; la t&#234;te car Andr&#233;e sait bien faire la part des choses et appr&#233;cie les plaisirs simples. Attach&#233;e aux traditions, sensible aux valeurs morales (en particulier le m&#233;rite et l'honn&#234;tet&#233;), elle est l&#233;g&#232;rement introvertie, s'affichant comme prudente ou m&#233;fiante et ne s'&#233;panchant pas spontan&#233;ment. Quoique r&#233;ceptive aux suggestions et &#224; la collaboration, cette femme privil&#233;gie plut&#244;t le processus individuel qui cadre mieux avec ses aspirations. Sa force r&#233;side aussi dans son bon sens, sa r&#233;gularit&#233; et sa capacit&#233; &#224; construire ses projets sans &#234;tre trop g&#234;n&#233;e par un &#233;ventuel manque de soutien de son entourage. Son ambition professionnelle sera influenc&#233;e par cette partie du caract&#232;re (&#224; nuancer avec le reste de l'analyse num&#233;rologique). Avec un esprit aussi pratique que s&#233;rieux, une certaine attirance pour la logique, la rigueur est in&#233;vitable. Andr&#233;e est pers&#233;v&#233;rante. Elle prend plaisir &#224; planifier, organiser autant qu'&#224; bien faire les choses m&#234;me si cela ne lui rapporte pas d'&#233;loges. Ind&#233;niablement, une personne de confiance qui assume sa part de responsabilit&#233;s et m&#234;me davantage. Des facult&#233;s qui peuvent lui ouvrir bien des portes et la mener loin. Qu'elle parvienne &#224; trouver en elle davantage d'assurance et vous verrez son ambition se lib&#233;rer pour se r&#233;aliser au travers d'entreprises d'envergure. Il se peut qu'elle &#233;prouve davantage de plaisir aux travaux minutieux, au contact sensuel avec la mati&#232;re et y d&#233;veloppe une passion cr&#233;ative. Son go&#251;t pour l'ordre, la m&#233;thode, la propret&#233;, la ponctualit&#233; fait qu'elle s'agace d'avoir &#224; c&#244;toyer des gens brouillons ou trop insouciants. C'est probablement par besoin inconscient de s&#233;curit&#233; qu'elle d&#233;ploie une grande minutie avant d'entreprendre quelque chose. Elle a horreur d'&#234;tre mise sous pression et d'avoir &#224; emprunter la voie de l'&#224;-peu-pr&#232;s. En revanche, elle a du mal &#224; concevoir que le positif, l'innovation puisse parfois surgir de fa&#231;on inattendue d'une situation quelque peu d&#233;sordonn&#233;e. Certaines personnes ayant cette caract&#233;ristique vibratoire poss&#232;dent des capacit&#233;s analytiques puissantes les autorisant &#224; s'orienter vers de hautes &#233;tudes exigeant rigueur de raisonnement et sens pratique.</p>
+
+<p>Mal employ&#233;es, ces qualit&#233;s engendrent des d&#233;fauts. Avoir cette vibration dans son nom de naissance expose &#224; &#234;tre un peu trop carr&#233;. L'on peut prendre go&#251;t &#224; devenir exigeant, maniaque ou &#233;conome &#224; l'exc&#232;s ce qui nuit &#224; la fluidit&#233; relationnelle. Davantage de souplesse ne peut qu'&#234;tre b&#233;n&#233;fique. Il y a un temps pour le travail, l'&#233;pargne mais aussi un temps pour le plaisir, les loisirs et l'&#233;quilibre personnel. Face aux probl&#232;mes, il convient d'&#233;viter les approches trop rationnelles, trop rigides. L'efficacit&#233; requiert sa part d'intuition et d'adaptation. La spontan&#233;it&#233;, l'inattendu, les changements de rythme font partie des charmes de la vie, tout particuli&#232;rement dans l'univers des relations sentimentales o&#249; il n'est gu&#232;re envisageable de planifier le d&#233;roulement des choses par avance.</p>
+
+<p>Dans sa vie sentimentale, une certaine r&#233;serve pr&#233;domine. Cela pourrait s'av&#233;rer un avantage notamment pour &#233;viter les choix affectifs pr&#233;matur&#233;s. Mais il ne faudrait pas laisser cette retenue engendrer une inhibition dans l'&#233;tablissement d'une relation. Une femme certes peu exub&#233;rante mais qui appr&#233;cie pourtant beaucoup de recevoir des marques d'affection, des preuves d'amour. On retrouve indirectement son attachement aux valeurs morales, &#224; l'authenticit&#233;. Andr&#233;e opte plut&#244;t pour une relation sentimentale simple, claire et sans complications. Surtout pas de faux-semblant, de duplicit&#233; avec elle. Elle souhaite trouver un homme franc, loyal, fiable qui la s&#233;curise, un homme partageant ses principes et avec qui elle pourra construire quelque chose de s&#233;rieux et une belle harmonie familiale. Plut&#244;t fid&#232;le, elle est aussi possessive et ne supportera pas de voir r&#244;der une concurrente autour de son compagnon. En fait, une femme remarquable, une excellente m&#232;re, toute heureuse du sentiment s&#233;curisant que lui procure une position sociale claire et bien &#233;tablie dans son foyer et dans sa profession.</p>
+
+<p class="sousnombre">Ce trait de caract&#232;re a pour racine 40, associ&#233;e au "Valet de Coupes" dans la symbolique des lames du Tarot. Cette figure loyale, serviable et souvent studieuse va infl&#233;chir le caract&#232;re dans le sens de la sinc&#233;rit&#233; et du travail. Le sujet conservera sa vie durant un c&#244;t&#233; terre &#224; terre et une candeur sympathique qui contribueront n&#233;anmoins &#224; le rendre un peu herm&#233;tique aux subtilit&#233;s propres au domaine relationnel et sentimental. Cette figure du Tarot est aussi associ&#233;e &#224; la notion de limitation, de retard, de tentation ou m&#234;me de "travers&#233;e du d&#233;sert". La s&#233;curit&#233;, autant affective que mat&#233;rielle, risque de ne venir qu'apr&#232;s cette &#233;tape difficile. En imposant ce genre de restrictions, la vie incite &#224; faire ses choix plus judicieusement, avec davantage de maturit&#233;. L'amusement, les loisirs seront quelque peu d&#233;laiss&#233;s mais avec, &#224; terme, la satisfaction d'avoir su &#233;voluer et r&#233;ussir. La le&#231;on de cette racine est d'&#233;viter de s'accrocher au pass&#233; ou aux illusions pour d&#233;passer les difficult&#233;s rencontr&#233;es.</p>
+
+<h2>Moi Intime<a id="Moi"></a></h2>
+
+<p>Le Moi Intime, appel&#233; &#233;galement "moi cach&#233;", est la base inconsciente de votre personnalit&#233;. Il forme un peu le socle de votre &#233;difice ou le donjon de votre ch&#226;teau en cas d'adversit&#233;. C'est en lui que vous allez rechercher des forces lorsque vous en sentez le besoin; en particulier dans des situations conflictuelles, chaque fois que vous devez affronter un probl&#232;me concret d'importance, que vous &#234;tes en &#233;tat de tension (fatigue, exasp&#233;ration, stress) ou lorsque vos int&#233;r&#234;ts primordiaux sont menac&#233;s. Vous cesserez alors d'utiliser la vibration de votre Nombre d'Expression pour vous appuyer exclusivement sur votre Moi Intime. C'est votre mani&#232;re de r&#233;agir. La vibration du Moi Intime permet de conna&#238;tre le caract&#232;re cach&#233; de l'&#234;tre humain : ses besoins profonds et sa strat&#233;gie r&#233;active en cas de tension.</p>
+
+<p>Toute votre structure psychologique repose sur le Moi Intime ! Il est d&#232;s lors important que son int&#233;grit&#233; soit pr&#233;serv&#233;e de toute atteinte sans quoi votre expression usuelle en p&#226;tirait (il en r&#233;sulterait nervosit&#233;, angoisse et ind&#233;cision). Ce nombre qui prend toute sa signification vers l'&#226;ge adulte est calcul&#233; par la somme r&#233;duite des <strong>consonnes</strong> de votre &#233;tat civil &#224; la naissance.</p>
+
+<pre style="font-size:1.2em">Andr&#233;e Fran&#231;oise Lacombe
+ 549   69 51  1  3 3 42  = 52 = 7<!-- Yves Pflieger YvesPflieger--></pre>
+
+<p><strong>Votre Moi Intime est le nombre 7.</strong></p>
+
+<p>Besoins prioritaires du 7 : la pr&#233;servation de son jardin secret, la tranquillit&#233; de son monde. La construction d'une structure int&#233;rieure solide avant de se tourner vers l'ext&#233;rieur et les autres.
+Type de r&#233;action : est relativement secr&#232;te et impr&#233;visible dans ces situations. Peut se refermer sur elle-m&#234;me mais &#233;galement se montrer audacieuse, accrocheuse et m&#234;me dominatrice s'il utilise sa rh&#233;torique.</p>
+
+<p>Votre personnalit&#233; intime est assez &#233;nigmatique, &#224; l'image de cette vibration qui vous anime et se singularise par sa r&#233;serve, son relatif d&#233;tachement mais aussi son sens critique. Parmi vos appuis figurent un sens de l'analyse et des capacit&#233;s d'introspection. Votre base intime a besoin de calme. Cela vous permet de bien appr&#233;hender votre environnement et de comprendre o&#249; vous aller. En fait, vous n'aimez pas l'improvisation et le flou bien que vous-m&#234;me, paradoxalement, n'&#234;tes gu&#232;re lisible et faites tout pour pr&#233;server votre jardin secret. Dans le m&#234;me ordre d'id&#233;e, votre fonctionnement est tributaire du respect de votre rythme propre, qui n'est ni lent ni rapide, et cela peut vous perturber si ce n'est vous irriter quand on le bouscule. Prendre une d&#233;cision impulsive, partir en vacances sur un coup de t&#234;te vous d&#233;pla&#238;t et va &#224; l'encontre des conditions qui sont n&#233;cessaires &#224; votre &#233;quilibre intime. Ce n'est pas que vous craignez l'inconnu ou l'affrontement mais vous pr&#233;f&#233;rez faire face &#224; une situation importante avec un minimum de pr&#233;paration. Bien entendu, une fois satisfaite ou apais&#233;e sur ce plan vous utiliserez &#224; nouveau pleinement votre vibration d'Expression (voir ce nombre).</p>
+
+<p>Lorsque vous vous appuyez sur votre Moi Intime, votre personnalit&#233; d&#233;gage un fort sentiment de connaissance de soi assorti d'une pointe de s&#233;v&#233;rit&#233;. Vous aimez garder un certain myst&#232;re, donner l'impression que vous &#234;tes tr&#232;s bien inform&#233;e et vous avez le sentiment d'avoir une forte personnalit&#233;. Qu'il s'agisse de logique ou plus simplement d'ent&#234;tement de votre part, vous savez exposer vos croyances avec d&#233;termination et il est difficile de vous d&#233;vier de la position que vous soutenez. Vos th&#233;ories ou arguments sont bien rod&#233;s et vous saurez les utiliser pour riposter de fa&#231;on souvent p&#233;remptoire. Dans une discussion, vous arrivez plus ou moins, selon votre exp&#233;rience et votre degr&#233; d'intelligence, &#224; d&#233;sarmer votre interlocuteur en d&#233;cortiquant bien les faits ou en ayant recours &#224; d'autres artifices. Vous pourriez avoir tendance &#224; consid&#233;rer ce type de capacit&#233; comme un outil de pouvoir, ce qui vous ferait ressembler au chevalier noir, celui qui inspire une certaine crainte parce qu'il symbolise l'inconnu. Ce c&#244;t&#233; &#233;nigmatique, impr&#233;visible est la cl&#233; de votre strat&#233;gie d&#233;fensive. Vous &#233;mettez peu sur vous-m&#234;me et on a du mal &#224; &#233;valuer l'ampleur et la nature de votre r&#233;action, ce qui peut s'av&#233;rer dissuasif. Votre &#233;ventail de r&#233;action est vari&#233;. Vous pouvez tr&#232;s bien vous refermer sur vous-m&#234;me mais aussi devenir tranchante, froide, vous rebeller ou alors pr&#233;parer secr&#232;tement votre riposte future.</p>
+
+<p>Votre stabilit&#233; intime d&#233;pend beaucoup du calme et de l'ind&#233;pendance que vous r&#233;ussissez &#224; vous octroyer. Vous n'aimez pas que l'on vous bouscule et subir une tutelle ne vous convient gu&#232;re surtout que cette vibration 7 contribue &#224; stimuler votre ambition. Il est important pour vous de r&#233;ussir, d'&#234;tre reconnue. Quand il s'agit de trouver des forces, c'est en vous-m&#234;me que vous allez les chercher plut&#244;t qu'en vous tournant vers les autres. En cas de conflit, vous jouez volontiers l'indign&#233;e mais vous pouvez &#233;galement opter pour le sto&#239;cisme ou la r&#233;volte ouverte. Face &#224; un probl&#232;me, vous approfondissez la question, vous r&#233;fl&#233;chissez assez longtemps pour finir par trouver une solution logique que vous mettez en oeuvre &#233;nergiquement. Si d'aventure votre base intime venait &#224; &#234;tre trop longtemps instable et que vous perdiez vos appuis, il s'en suivrait un enfermement dans la solitude et la m&#233;lancolie avec probablement un encha&#238;nement d'id&#233;es noires dont il faudra vous m&#233;fier surtout si vous avez d'autres vibrations de type 7 ou 9. Il vous faudra alors r&#233;agir, sortir, prendre l'air, exposer vos probl&#232;mes avant que ceux-ci ne vous entra&#238;nent trop loin.</p>
+
+<p>Votre fonctionnement intime est assez tributaire de la pr&#233;servation de votre propre rythme de vie. Vous avez besoin d'une vie relativement calme, de moments de solitude et de votre ind&#233;pendance. Ces conditions vous permettront alors de mieux vous exprimer avec votre Nombre d'Expression. Vous n'appr&#233;ciez gu&#232;re la pression, les changements brusques de rythme ni les questions trop personnelles. Votre jardin secret est un refuge sacr&#233; et vous n'aimez pas qu'on tente d'y p&#233;n&#233;trer. Mais cela ne vous g&#234;ne pas pour observer et analyser les personnes autour de vous. On pourrait vous trouver un certain penchant pour la critique ou du moins pour les jugements abrupts. En fait, votre structure de base vous pousse a adopter naturellement un angle analytique mais sans pour autant que vous restiez isol&#233;e ; vous appr&#233;ciez aussi les &#233;changes avec les personnes que vous choisissez. En revanche, vous &#234;tes moins motiv&#233;e par les travaux domestiques ou manuels et vous n'&#234;tes pas tr&#232;s intuitive (sauf indications contraires dans le reste de votre th&#232;me). Si vous &#234;tes pr&#234;te &#224; conjuguer profondeur intuitive, sens pratique et spontan&#233;it&#233; avec connaissance raisonn&#233;e, vos chances de r&#233;ussite s'en trouveront grandement accrues.</p>
+
+<p>En amour, l'ingr&#233;dient principal de votre base profonde semble &#234;tre le rapport intellectuel avec votre "camarade". Vous ne concevez pas la relation sentimentale sous son angle habituel. Vous avez besoin de loyaut&#233;, d'autonomie voire de dominer quelque peu votre partenaire chaque fois que votre perception des choses vous place dans l'orbite de votre Moi Intime. Vous pourriez &#233;galement &#234;tre r&#233;serv&#233;e, distante et manifester une certaine inflexibilit&#233; vis-&#224;-vis des &#233;motions. Ce n'est qu'une fois rassur&#233;e au niveau de vos besoins profonds que vous utiliserez &#224; nouveau votre vibration usuelle d'Expression. Ce manque relatif de chaleur sera &#233;galement &#224; nuancer en fonction de votre jour de naissance et de votre Pierre Angulaire qui pourrons vous apporter l'aisance qui peut-&#234;tre vous manque dans le domaine sentimental.</p>
+
+<p class="sousnombre">Ce trait de caract&#232;re a pour racine 52, associ&#233;e &#224; la "Dame d'&#201;p&#233;es" dans la symbolique des lames du Tarot. La "Dame" dont il est ici question d&#233;signe g&#233;n&#233;ralement une personne sage, perspicace, cr&#233;ative mais aussi efficace et combative. Avoir une telle racine dans son nom laisse augurer un peu plus de luttes, de d&#233;ceptions ou de privations que le lot de tout un chacun. Il faudra apprendre &#224; g&#233;rer cette adversit&#233; avec dignit&#233; mais fermet&#233;, apprendre &#224; supporter les critiques stupides sans perdre son calme ni finir par devenir amer. La le&#231;on associ&#233;e &#224; cette racine n'est pas des plus faciles mais si elle est bien g&#233;r&#233;e le caract&#232;re en sortira renforc&#233;. Cette figure du Tarot est &#233;galement une indication de facilit&#233;s sportives et d'aptitude &#224; la comp&#233;tition.</p>
+
+<h2>Inclusion<a id="Inclusion"></a></h2>
+
+<p>Aussi appel&#233;e &#201;toile de V&#233;nus, elle calcule le nombre d'occurrence des lettres de valeur 1 &#224; 9 de votre nom complet. Chacune de ces valeurs apporte certaines petites nuances concernant les traits de caract&#232;re. Les indices de ces occurrences sont plac&#233;s dans les cases d'un carr&#233;. Un indice &#233;gal &#224; z&#233;ro &#233;voque une faiblesse &#233;ventuelle.</p>
+
+<table align="center"  style="border: 1px solid darkgrey;" ><tr><th colspan="3" style="font-size: 0.9em;  text-align: center; ">Andr&#233;e Fran&#231;oise Lacombe</th></tr>
+<tr><td style=" text-align: center;">6</td><td style=" text-align: center;">1</td><td style=" text-align: center;">2</td></tr><tr><td style=" text-align: center;">2</td><td style=" text-align: center;">5</td><td style=" text-align: center;">3</td></tr><tr><td style=" text-align: center;">-</td><td style=" text-align: center;">-</td><td style=" text-align: center;">3</td></tr>
+</table>
+<br/>
+<p>Vous vous affirmez par votre sens diplomatique, votre art des relations sociales. Vos d&#233;cisions sont bien pes&#233;es pour ne pas bousculer l'harmonie existante. Vous restez assez conciliant.
+<strong>Vous avez 6 lettres dans votre Inclusion 1 (A, J, S, &#233;, &#232;, &#234;, &#231;).</strong></p>
+
+<p>Vous prenez l'initiative de nouer des amiti&#233;s, de coop&#233;rer avec votre prochain. Vous avez confiance en votre intuition.
+<strong>Vous avez 1 lettre dans votre Inclusion 2 (B, K, T, &#246;).</strong></p>
+
+<p>Vous vous exprimez avec tact et finesse sans forc&#233;ment prendre l'initiative d'&#233;tablir la relation. Vous vous servez de vos capacit&#233;s &#224; la communication dans une optique de collaboration. La cr&#233;ativit&#233; b&#233;n&#233;ficie d'une belle imagination.
+<strong>Vous avez 2 lettres dans votre Inclusion 3 (C, L, U, &#249;, &#251;).</strong></p>
+
+<p>Excellente aptitude &#224; la collaboration. Votre sens pratique se r&#233;v&#232;le davantage dans les d&#233;tails et la finesse. La mise en oeuvre d&#233;pend du contexte, des appuis re&#231;us et manque quelque peu de fermet&#233;, de t&#233;m&#233;rit&#233;.
+<strong>Vous avez 2 lettres dans votre Inclusion 4 (D, M, V).</strong></p>
+
+<p>Vivacit&#233; d'esprit, ouverture sur le monde, polyvalence et capacit&#233; d'adaptation aux situations les plus vari&#233;es seront tr&#232;s pr&#233;sentes. Une belle &#233;nergie qui s'exprimera surtout dans une recherche spontan&#233;e de nouveaut&#233;s, de projets aventureux.
+<strong>Vous avez 5 lettres dans votre Inclusion 5 (E, N, W, &#238;, &#235;).</strong></p>
+
+<p>Votre sens esth&#233;tique, d&#233;coratif est bien marqu&#233;. Belle cr&#233;ativit&#233;. Facult&#233;s d'expression assez soign&#233;es. Enthousiasme &#224; r&#233;pandre l'harmonie. Vie sentimentale riche. Les responsabilit&#233;s sont plus volontiers endoss&#233;es si votre image sociale en b&#233;n&#233;ficie.
+<strong>Vous avez 3 lettres dans votre Inclusion 6 (F, O, X, &#244;, &#228;).</strong></p>
+
+<p>Votre altruisme, rayonnement et ouverture d'esprit sont utilis&#233;s avec spontan&#233;it&#233;. Vous prenez l'initiative d'aider les autres, de leur apporter votre cr&#233;ativit&#233; et enthousiasme. Beaux id&#233;aux. Possible tendance &#224; en faire trop par besoin inconscient de briller.
+<strong>Vous avez 3 lettres dans votre Inclusion 9 (I, R, &#224;, &#226;, &#239;).</strong></p>
+
+<h2>II. SPH&#200;RE FAMILIALE</h2>
+<h2>Nombre Actif<a id="Nombre actif"></a></h2>
+
+<p>Le nombre Actif est la somme r&#233;duite de la totalit&#233; des lettres du pr&#233;nom usuel ou premier pr&#233;nom. C'est en quelque sorte l'&#233;quivalent du nombre d'Expression usuelle mais &#224; l'&#233;chelle du pr&#233;nom. Il traduit un compl&#233;ment int&#233;ressant de notre facult&#233; d'expression mais prise cette fois dans le cercle plus restreint de la famille et des tr&#232;s bons amis. Au-del&#224; de ce cercle d'intimes, nous utilisons &#224; nouveau le comportement bas&#233; sur les vibrations de notre nom complet et cela m&#234;me avec les personnes qui nous appellent par notre pr&#233;nom. Pour comprendre le caract&#232;re d'un enfant c'est le nombre actif qui est r&#233;v&#233;lateur. Ce n'est que vers l'adolescence que l'on commence &#224; s'appuyer pleinement sur les vibrations du nom complet de naissance, lequel tend &#224; d&#233;finir l'axe majeur de notre comportement usuel dans le cercle social large. Bien entendu, l'individu conserve la possibilit&#233; de jongler entre ces deux potentiels en fonction des situations. L'explicatif du nombre actif sera utilement nuanc&#233; par l'analyse de la vibration issue du total des voyelles du pr&#233;nom usuel. Ainsi, les valeurs 1 et 8 accentueront l'affirmation de soi, le dynamisme tandis que les vibrations 2, 6 et 9 adouciront la personnalit&#233; utilis&#233;e dans le cadre familial par davantage de sens coop&#233;ratif et de sensibilit&#233;. La vibration 3 au niveau des voyelles du pr&#233;nom dynamisera l'expression tandis que la valeur 7 ou 4 apportera du s&#233;rieux. Il est &#233;galement utile de tenir compte des nuances fournies par l'initiale (cf. Pierre angulaire).</p>
+
+<pre style="font-size:1.2em">Andr&#233;e
+154915 = 25 = 7</pre>
+
+<h3>Qui est-elle ?</h3>
+<p>Votre nombre Actif est le nombre 7. Au sein du cercle familial vous apparaissez comme l'&#234;tre calme, observateur et quelque peu secret. Vous &#234;tes l'original ou le philosophe de la famille, celui qui recherche la connaissance et qui a besoin de son espace de tranquillit&#233;. Si vous aimez vous appuyer sur cette vibration-l&#224;, nul doute que vous utiliserez cette partie de votre personnalit&#233; dans des activit&#233;s assez techniques, avant-gardistes, scientifiques, intellectuelles, de p&#233;dagogie, de plaidoierie ou en rapport avec les livres, l'informatique.</p>
+
+<h3>Quelle enfant est-elle ?</h3>
+
+<p>Enfant, Andr&#233;e est une fillette plut&#244;t s&#233;rieuse, responsable, curieuse des myst&#232;res de la vie. Ses dehors un peu sauvages laissent &#224; penser qu'elle est timide, r&#233;serv&#233;e. En fait, Andr&#233;e est bien plus &#233;veill&#233;e qu'on ne l'imagine ; elle observe, &#233;coute et construit ses aptitudes futures au raisonnement.</p>
+
+<p>Cet &#233;veil intellectuel manifest&#233; pr&#233;cocement a aussi son revers car cette lucidit&#233; peut entretenir chez cette fillette un fond d'inqui&#233;tude face aux r&#233;alit&#233;s de la vie dont elle commence &#224; prendre conscience. Si l'on n'y prend garde, elle pourrait se complaire dans la solitude de sa chambre (surtout si elle est n&#233;e un 4, 7, 13, 16, 25 ou 31) au risque de d&#233;velopper insuffisamment sa fibre sociale. Sur ce plan, apprenez-lui &#224; ne pas se formaliser des in&#233;vitables d&#233;convenues de la vie en groupe. Faites-lui pratiquer du sport ainsi que diverses activit&#233;s cr&#233;atives et d'expression. Favorisez de temps &#224; autre le contact avec des animaux dociles. Aidez-la &#224; prendre confiance en elle pour qu'elle s'ouvre pleinement. Aidez-la, aimez-la, s&#233;curisez-la mais tout en veillant &#224; la stimuler assez r&#233;guli&#232;rement par des encouragements afin qu'elle aille de l'avant et s'&#233;panouisse. Bien entendu, il est des moments o&#249; il faut faire preuve d'autorit&#233;. Mais dans ce cas ne la rudoyez pas, surtout si elle commence &#224; montrer une certaine spontan&#233;it&#233;, facteur cl&#233; de son &#233;quilibre. Inutile de r&#233;veiller son r&#233;flexe de repli qui la met alors trop longtemps en d&#233;fensive. Privil&#233;giez la communication, l'humour et l'amour.</p>
+
+<h2>Pierre Angulaire<a id="Lettre"></a></h2>
+
+<p>L'initiale du premier pr&#233;nom se nomme en Num&#233;rologie, la Pierre Angulaire. Telle une &#233;bauche au fusain, cet &#233;l&#233;ment apporte ses nuances &#224; la personnalit&#233; adopt&#233;e dans le cadre familial et accessoirement dans un cadre social large.</p>
+
+<p><strong>Lettre A.</strong> Lettre c&#233;r&#233;brale, dynamique et cr&#233;ative, A se conjugue avec les concepts d'assurance, d'ardeur et d'ambition. Renforc&#233;e par sa barre horizontale et fi&#232;rement camp&#233;e sur ses deux jambes, cette lettre a la t&#234;te bien sur les &#233;paules. &#192; l'image d'une tour Eiffel, cette initiale v&#233;hicule l'id&#233;e d'individualit&#233; et de force. D'instinct, on lui accorde le sens de l'initiative, de l'autorit&#233; et une belle volont&#233;. Les opinions sont claires, assez tranch&#233;es, parfois abruptes dans leur formulation. Ceux qui ont A en initiale d&#233;fendent assez &#226;prement leurs opinions au point parfois d'avoir de v&#233;ritables &#339;ill&#232;res. A sait se valoriser avec originalit&#233;, &#233;prouve un sentiment de sup&#233;riorit&#233;, prend go&#251;t au pouvoir et, parfois, perd quelque peu le sens de la mesure. Fort de son potentiel, A ouvre la voie avec courage et met en oeuvre de nouveaux projets. A c'est aussi le go&#251;t de l'aventure, ce go&#251;t de l'innovation, ce brin de fantaisie. A pense et agit rapidement. Parfois m&#234;me impulsivement. Gare &#224; ce que les Agn&#232;s, Alexandra ou Alain ne se mettent pas &#224; se consumer alors tel un feu de paille, d&#233;ployant beaucoup d'&#233;nergie sans r&#233;elle concr&#233;tisation.</p>
+
+ <h2>Nombre d'h&#233;r&#233;dit&#233;<a id="Heredite"></a></h2>
+
+<p>Ce nombre r&#233;v&#232;le la partie passive de vos possibilit&#233;s d'expression qui est commune &#224; tous les membres de votre famille. Il forme l'h&#233;ritage socio-culturel de votre famille. L'interpr&#233;tation de cette vibration familiale doit &#234;tre abord&#233;e dans un sens large car elle ne poss&#232;de qu'un impact mineur sur la personnalit&#233;. Il est calcul&#233; &#224; partir de toutes les lettres de votre nom de famille &#224; la naissance.</p>
+
+<pre style="font-size:1.2em">Lacombe
+3136425 = 24 = 6</pre>
+
+<p>Vous avez un nombre h&#233;r&#233;ditaire 6. Celui-ci est impr&#233;gn&#233; de l'id&#233;e de justice, du sens des responsabilit&#233;s et de g&#233;n&#233;rosit&#233;. L'esprit de solidarit&#233; est la composante majeure de votre famille. Par ailleurs, go&#251;t possible pour les r&#233;unions de famille, int&#233;r&#234;t pour l'art, l'esth&#233;tique.</p>
+
+<h2>III. VOS POTENTIELS</h2>
+<h2>Jour de naissance<a id="JourNaissance"></a></h2>
+
+<p>Le jour de naissance est un jour bien particulier. L'astrologie nous apprend que l'influence de cette vibration s'exerce surtout pendant le second cycle saturnien d'un individu soit entre 28 et 60 ans environ, autrement dit le registre productif de notre vie. La valeur num&#233;rologique du jour de naissance est la m&#234;me que celle de l'important cycle num&#233;rologique dit productif qui pr&#233;side &#224; nos options dans le domaine de nos r&#233;alisations et influence notre strat&#233;gie dans les rapports sociaux et professionnels. Pr&#233;cisons que certaines vibrations de naissance ne favorisent pas directement l'obtention de r&#233;sultats tangibles ou financiers mais davantage l'&#233;panouissement personnel dans l'un de ces domaines : art, culture, aventure, altruisme et sph&#232;re intellectuelle. Ces orientations concernent surtout les natifs du 5, 7, 9, 14, 16, 18 et 25 qui risquent de moins s'employer que d'autres &#224; "engranger" durant cette p&#233;riode car leurs priorit&#233;s seront ailleurs. Une prise de conscience leur permettra de corriger un peu le tir si le facteur financier venait &#224; &#234;tre un peu trop n&#233;glig&#233;.</p>
+
+<p><strong>Vous &#234;tes n&#233;e un 25</strong>. La vibration de ce jour donne le go&#251;t pour la r&#233;flexion et stimule le sens de l'observation. Les natifs du 25 ont une partie de leur personnalit&#233; les incitant &#224; aborder les choses concr&#232;tes essentiellement sous l'angle intellectuel ce qui ne constitue pas toujours un avantage notamment pour s'adapter &#224; certaines r&#233;alit&#233;s et obtenir des r&#233;sultats tangibles. En revanche, ils ont de fortes chances de pr&#233;senter des aptitudes pour les professions tr&#232;s sp&#233;cialis&#233;es mettant l'accent sur le travail de l'esprit et le souci du d&#233;tail. Ces tendances pr&#233;sideront aux options des natifs du 25 en particulier lors du cycle productif entre 28 et 60 ans, moment cl&#233; pour se construire une s&#233;curit&#233; mat&#233;rielle. Nombre d'entre eux continuent d'ailleurs &#224; se cultiver en dehors de leur profession. Assez opini&#226;tres, ils acceptent volontiers le d&#233;fi de devenir un sp&#233;cialiste dans une ou m&#234;me deux disciplines. Ils sont capables de bien coop&#233;rer tout en conservant un go&#251;t prononc&#233; pour le travail en solitaire. Leur jardin secret est un lieu essentiel &#224; leur &#233;quilibre. Ils s'y ressourcent avant de prendre leur d&#233;cisions. Les natifs du 25 se r&#233;v&#232;lent &#234;tre des amis pr&#233;cieux que l'on gagne &#224; d&#233;couvrir m&#234;me s'ils ne s'ouvrent pas toujours facilement. Le probl&#232;me pourrait venir de leurs choix professionnels, d'une approche trop abstraite ou encore d'un refus de certaines contraintes ou r&#232;gles sociales jug&#233;es absurdes. Toujours est-il qu'une grande partie des natifs du 25 en viennent involontairement &#224; oublier quelque peu la finalit&#233; de ce cycle productif : faire avancer leurs affaires et s&#233;curiser leur vie affective. Se montrer quelque peu r&#233;serv&#233; ou absorb&#233; par des centres d'int&#233;r&#234;ts atypiques ne contribue gu&#232;re &#224; se constituer un r&#233;seau social &#233;tendu ni &#224; maintenir la spontan&#233;it&#233;, la chaleur indispensables &#224; l'harmonie du couple. Des principes auxquels ils adh&#232;rent bien volontiers mais qu'ils perdent parfois de vue. Tous ces &#233;l&#233;ments sont &#233;videmment &#224; pond&#233;rer en fonction des autres grandes tendances r&#233;v&#233;l&#233;es dans le reste du th&#232;me.</p>
+
+<p>Personnes c&#233;l&#232;bres n&#233;es un jour 25 : Pablo Picasso, Renoir, Claudia Schiffer, Sean Connery, Michael Douglas (acteurs).</p>
+
+<h3>Cadeau du jour de naissance</h3>
+
+<p>Seules celles qui ont un jour de naissance &#224; deux chiffres auront ce cadeau en tant que facilit&#233; dans leur vie.</p>
+
+<p>Votre cadeau du jour de naissance est le nombre 3. En cadeau, certaines facilit&#233;s concernant la vente, la cr&#233;ativit&#233;, l'expression orales, &#233;crites ou gestuelle.</p>
+
+<h2>Nombre de lettres de l'&#233;tat civil<a id="NbLettre"></a></h2>
+
+<p>Le nombre de lettres qui composent vos pr&#233;noms et votre nom de famille &#224; la naissance n'est pas anodin. De ce total de lettres &#233;mane une impression, une sorte d'aura &#224; laquelle l'entourage est plus ou moins sensible. Bien s&#251;r, l'impact de la longueur du nom reste secondaire compar&#233; aux quatre vibrations majeures qui constituent en quelque sorte notre "moule vibratoire" personnel. Moule auquel la plupart d'entre nous se conforme d'ailleurs tout naturellement. Lors du choix du nom d'un enfant il est recommand&#233; de prendre &#233;galement en compte ce nombre de lettres. Les num&#233;rologues estiment que si la longueur du nom de famille l'emporte sur celle du ou des pr&#233;noms l'influence de l'h&#233;ritage familial (nombre d'h&#233;r&#233;dit&#233;) pourrait &#234;tre plus marquante.</p> 
+
+<p><strong>Vous avez 22 lettres dans votre &#233;tat civil.</strong> Aura d'envergure cr&#233;ative. Imm&#233;diatement ce nom d&#233;gage une impression d'assurance et de s&#233;rieux renforc&#233;e par cette envergure notable. Ce bel ensemble se voit rehauss&#233; par une touche humaniste. Autorit&#233;, volont&#233; et aptitude &#224; l'organisation, aux responsabilit&#233;s transparaissent chez ceux qui ont ces vingt-deux lettres dans leur nom. Nul doute que cette aura (potentiel &#224; mettre en valeur) induira le respect de la part de ceux qui vous c&#244;toient.</p>
+
+<!--
+<h2>Comportement &#233;rotique<a id="Eros"></a></h2>
+
+<p>Le comportement &#233;rotique &#233;voqu&#233; ici est bas&#233; sur le signe chinois de chacun des deux partenaires. Attention: <strong>Dans cette interpr&#233;tation, ce signe d&#233;bute le 1er janvier et non entre le 20 janvier et le 19 f&#233;vrier</strong> comme le veut l'horoscope chinois pour se conformer au calendrier occidental pour lequel les occidentaux semblent plus sensibles que les asiatiques.</p>
+
+<p>L'horoscope utilis&#233; en Chine et en Tha&#239;lande fonctionne selon un cycle de 12 ans. Bien que ce syst&#232;me de calcul ne d&#233;coule pas de la num&#233;rologie, il peut n&#233;anmoins donner une approche int&#233;ressante et nouvelle sur le comportement &#233;rotique. Ce petit aper&#231;u vous aidera sans doute &#224; faire avancer positivement votre relation avec la personne que vous aimez.</p>
+
+<p>Selon cet horoscope, vous &#234;tes n&#233;e pendant l'ann&#233;e du <strong>"Chien"</strong>. Voici un descriptif de votre comportement &#233;rotique.</p>
+
+<p>La femme "Chien" se singularise par sa r&#233;serve et sa discr&#233;tion. On pourrait penser &#224; de la timidit&#233; alors qu'en fait c'est sa nature r&#234;veuse qui la rend quelque peu introvertie. Elle poss&#232;de une certaine &#233;l&#233;gance mais aussi un c&#244;t&#233; farouche pour les unes, indompt&#233;e pour les autres qui fait que cette belle plante ne se laisse pas effeuiller facilement. Mais n'allez pas croire que cette pudeur qu'elle conserve d'un bout &#224; l'autre de sa vie, l'emp&#234;che, le moment venu, de savoir s'adonner au plaisir. En donner et en recevoir, telle est sa devise. En fait, sa sexualit&#233; est sup&#233;rieure &#224; la moyenne et qui saura la stimuler verra cette femme s'emballer tr&#232;s vite et sans remords. Il faudra cependant se plier &#224; certaines conditions. La femme "Chien" ne s'offrira vraiment qu'&#224; l'homme qu'elle aime. Celui-ci devra assumer ses sentiments et s'afficher avec franchise sans aucun &#233;quivoque. &#201;vitez de la cabrer, de la blesser car elle peut fort bien se muer en femme glaciale, agressive m&#234;me ou pr&#234;te &#224; s'enfermer dans sa tour d'ivoire pendant une assez longue p&#233;riode. Une extr&#233;mit&#233; pourtant facile &#224; &#233;viter en lui t&#233;moignant respect et tendresse, ce qu'elle m&#233;rite d'ailleurs tout &#224; fait. Aimez-la, g&#226;tez-la, car sa g&#233;n&#233;rosit&#233; est grande et son besoin de donner et de faire plaisir est quelque chose de fort appr&#233;ciable.</p>
+-->
+
+<h2>IV. PLAN DE VIE</h2>
+<h2>Chemin de Vie<a id="Chemin"></a></h2>
+
+<p>Le Chemin de Vie se calcule par la somme r&#233;duite de la date de naissance (jour + mois + ann&#233;e). La r&#233;duction s'effectuera &#224; l'un des 11 nombres suivants 1, 2, 3 ...9, 11 ou 22. Il n'y a pas de Chemin de vie 33. On &#233;vitera d'effectuer des r&#233;ductions en cours de d&#233;composition qui peuvent engendrer un nombre racine erron&#233;. L'&#233;tude du nom complet de naissance d&#233;voile le potentiel de l'individu, son bagage, ses atouts. C'est un acquis stable. Pour autant, la vie ne nous laisse pas tranquille et chacun d'entre nous aura quelques le&#231;ons &#224; assimiler. Le Chemin de vie nous en d&#233;voile une. Il s'agit d'un axe de facult&#233;s qu'il convient de d&#233;velopper ou d'exercer assez r&#233;guli&#232;rement au cours de votre existence afin de grandir, d'&#233;voluer en accord avec cet axe de naissance. Ainsi, le Chemin de vie conditionne en partie l'orientation de notre parcours de vie, surtout &#224; l'&#226;ge adulte.</p>
+
+<p>Le Chemin de Vie se r&#233;f&#232;re &#224; une orientation nous incitant &#224; d&#233;velopper un certain type de facult&#233;s. Ce chemin ne d&#233;crit pas notre comportement global usuel en soci&#233;t&#233; lequel d&#233;pend surtout des vibrations d'Expression et d'&#201;lan spirituel.</p>
+
+<pre style="font-size:1.2em">25+8+1970 = 2003 = 5 (05)</pre>
+
+<p>Vous avez un Chemin de vie 5. <strong>La voie des aventuriers, des &#234;tres libres et polyvalents. Sa mission : &#233;voluer par l'acceptation des changements dans l'optique de s'en enrichir.</strong>.</p>
+
+<h3>Nature et but du chemin</h3>
+
+<p>Dans cette destin&#233;e, l'accent sera mis sur les notions de libert&#233; et d'exp&#233;riences &#224; vivre. Cette ouverture doit servir &#224; vous enrichir et non &#224; vous disperser ou pire &#224; vous &#233;garer dans des voies douteuses. La vie vous fera sans doute conna&#238;tre l'aventure &#224; tous les niveaux. Votre vie risque d'&#234;tre une succession de changements, de d&#233;m&#233;nagements, de voyages. Il s'agit pour vous de go&#251;ter &#224; la diversit&#233; qu'offre le monde sans pour autant sacrifier son jardin secret &#224; cause de ce tourbillon qui vous attire et vous occupe tant &#224; l'ext&#233;rieur. Un chemin dynamique mais pas toujours facile car votre destin&#233;e peut aussi vous mettre dans des situations o&#249; vous serez oblig&#233;e de d&#233;fendre votre libert&#233; personnelle face aux pressions. Apprenez &#224; d&#233;tecter &#224; temps les situations ou compromissions qui, &#224; terme, vous emprisonneraient. Le voyageur devra rester attentif, savoir esquiver, reculer, savoir se d&#233;tacher du pass&#233; comme du futur pour s'&#233;panouir dans le pr&#233;sent et faire bon usage de sa libert&#233;. Avoir un parcours assez tonique, riche en mouvements, renouvellements n'exon&#232;re pas des contraintes de la vie. Il y a en a toujours eu. C'est au niveau de leur gestion que ce Chemin 5 est int&#233;ressant car il incite &#224; faire preuve de davantage de souplesse. Soyez r&#233;active, polyvalente, sachez saisir les opportunit&#233;s et tirer parti des changements. Cette approche positive est conforme &#224; la mission de votre chemin. Curiosit&#233; et vivacit&#233; d'esprit seront les bienvenues. Les structures organis&#233;es et routini&#232;res ne vous conviendront gu&#232;re. Vous serez plus &#224; l'aise dans les activit&#233;s inhabituelles, l&#224; o&#249; tout &#233;volue sans cesse (informatique, publicit&#233;, communication, promotion, vente, commerce, journalisme, langues, d&#233;placements, photographie, loisirs et sport). Un itin&#233;raire tonique qui conviendra un peu moins aux personnes ayant une vibration 4 ou 6 en bonne place dans leur analyse num&#233;rologique. Il ne sera gu&#232;re possible de s'accrocher &#224; des acquis, de chercher une stabilit&#233; routini&#232;re car votre destin&#233;e vous imposerait alors de nouvelles variations &#224; g&#233;rer.</p>
+
+<h3>Attitude &#224; adopter</h3>
+
+<p>Pour vivre harmonieusement pareille destin&#233;e un certain &#233;tat d'esprit s'impose. C'est un point &#224; r&#233;gler en priorit&#233; afin d'arriver &#224; vivre harmonieusement ce parcours vari&#233; et quelque peu aventureux. Le voyageur 5 devra maintenir son esprit alerte pour r&#233;ussir &#224; analyser rapidement les nouveaux probl&#232;mes, les variations de "donne" afin de les g&#233;rer au mieux. La nouveaut&#233; se d&#233;cline en deux nuances. Quand on parle de changement, on pense imm&#233;diatement &#224; un bouleversement. Les personnes ayant 1, 3, 5, 8, 9 ou 11 comme vibrations principales s'accommodent fort bien des renouvelements impos&#233;s par la vie et trouvent m&#234;me cela excitant. Toutefois, la le&#231;on de ce Chemin 5 ne porte pas uniquement sur les mutations importantes, il faudra &#233;galement porter attention aux fluctuations mineures exigeant des ajustements recurrents. N&#233;gliger cet imp&#233;ratif pourrait inciter le destin &#224; s'ing&#233;nier &#224; vous mettre dans des situations sp&#233;cifiquement destin&#233;es &#224; vous faire comprendre la n&#233;cessit&#233; de ces r&#233;ajustements mineurs mais n&#233;anmoins importants pour garder l'&#233;quilibre et un bon cap. L'utopie de l'&#233;quilibre stable et d&#233;finitif est tr&#232;s r&#233;pandue, il suffirait, pr&#233;tend-on, d'&#234;tre riche pour que tous les probl&#232;mes soient r&#233;gl&#233;s. Outre cette exigence de souplesse et vigilance, ce chemin va de pair avec une vision enthousiaste des choses afin de s'enrichir des changements l&#224; o&#249; d'autres per&#231;oivent une contrainte d&#233;sagr&#233;able. D'ailleurs, se montrer curieux de la vie et rechercher une nouveaut&#233; instructive de son propre chef &#233;vite souvent au voyageur 5 de voir la vie lui imposer des fluctuations ou mutations pas toujours agr&#233;ables (c'est ce qui arrive souvent &#224; celui qui r&#233;pugne au changement). Ce chemin peut mener au bonheur, au talent mais aussi &#224; l'&#233;chec selon l'usage que l'on en fait. Le voyageur devra bien prendre conscience qu'il se trouve sur le chemin des tentations et il peut se prendre au jeu d'exp&#233;rimenter la diversit&#233; de la vie au point de devenir prisonnier de ce &#224; quoi il go&#251;te. Sont notamment &#224; &#233;viter la superficialit&#233;, les prises de risques inconsid&#233;r&#233;es, les relations menant sournoisement &#224; une compromission et, bien entendu, la recherche de solution dans l'utopie ou les paradis artificiels. La finalit&#233; est d'apprendre &#224; g&#233;rer sainement sa libert&#233; personnelle sans la laisser vous gouverner et vous entra&#238;ner n'importe o&#249; (y compris g&#234;ner les autres). Une grande lucidit&#233; est n&#233;cessaire pour ne pas franchir certaines limites. Sur ce parcours, il est essentiel de savoir s&#233;parer le profitable de l'inutile et de cultiver une certaine mod&#233;ration car les pi&#232;ges et les d&#233;pendances guettent l'impr&#233;voyante. Une part d'impulsivit&#233;, de l&#233;g&#232;ret&#233; peut exister au niveau financier surtout si des vibrations 5 ou 3 se retrouvent en bonne place dans le reste de l'analyse num&#233;rologique. T&#226;chez de tenir vos promesses et de ne pas donner trop d'importance aux belles voitures et autres gadgets &#233;ph&#233;m&#232;res qui finiront par remplir vos armoires. N'oubliez pas que la famille et votre couple sont pour ainsi dire les deux seuls points de rep&#232;re stables sur ce parcours alors ne la n&#233;gligez pas. Ne les mettez pas en p&#233;ril par une inconstance ou des penchants malvenus. Faites de votre vie quelque chose de bien. Enfin, ne vous &#233;tonnez pas que l'on attende de vous d'apporter cet enthousiasme, ce magn&#233;tisme, cette richesse propres aux gens libres ayant "beaucoup v&#233;cu" mais que l'on ne vous pardonne que difficilement abus ou actions peu reluisantes.</p>
+
+<h3>Exc&#232;s &#224; &#233;viter</h3>
+
+<p>Les exp&#233;riences de vie, la vari&#233;t&#233; doivent vous enrichir et non pas emprisonner ! &#201;vitez aussi de tomber dans cette philosophie &#224; deux sous consistant &#224; "s'&#233;clater" et &#224; "papillonner" sans rien r&#233;colter; ce n'est pas cela que la vie attend de vous ! Attention &#224; la d&#233;rive courante consistant &#224; verser dans une libert&#233; &#233;go&#239;ste refusant de prendre en compte certaines obligations incontournables. Faire un usage &#233;go&#239;ste de sa libert&#233; personnelle sans tenir compte des autres, se montrer capricieuse et excessive dans la gestion de sa vie fera in&#233;vitablement souffrir l'entourage. Un &#233;quilibre devra &#234;tre trouv&#233;. &#192; l'oppos&#233;, certains voyageurs 5 peuvent se montrer r&#233;ticents aux adaptations, se m&#233;fier du changement ou encore mal g&#233;rer leur mutation. Il arrive aussi que le sujet pr&#233;f&#232;re se laisser porter par un courant de masse l&#224; o&#249; la vie lui impose de prendre un virage &#224; titre personnel. Des blocages psychologiques qu'il faudra apprendre &#224; d&#233;lier sous peine de voir la vie vous infliger des situations qui vous &#233;toufferont davantage jusqu'&#224; que vous r&#233;agissiez enfin. Encore faut-il le faire &#224; bon escient et pas trop tardivement.</p>
+
+<h2>Les 3 Cycles de votre vie<a id="Cycle"></a></h2>
+
+<p>La Num&#233;rologie divise la vie en 3 Cycles. Le premier Cycle dit formatif dure 365 lunaisons (28 ans et 4 mois), le second Cycle dit productif a la m&#234;me dur&#233;e et s'ach&#232;ve apr&#232;s 56 ans. Le 3e Cycle dit de moisson s'&#233;tend sur le reste de la vie. &#192; chaque cycle correspond une vibration particuli&#232;re donnant une orientation g&#233;n&#233;rale d'ordre psychologique &#224; l'ensemble de cette p&#233;riode. Un Cycle psychologique nous parle de nos go&#251;ts, de nos priorit&#233;s, de nos centres d'int&#233;r&#234;ts et projets. Cette orientation change avec l'apparition d'un nouveau Cycle de vie. Ce changement d'orientation vers l'&#226;ge de 28 ou 56 ans engendre parfois certaines divergences dans le couple si l'un devient subitement casanier alors que l'autre &#233;prouve le besoin de voyager, sortir, d&#233;couvrir. L'influence d'un Cycle psychologique est plus marquante pour un individu que celle de l'Apog&#233;e (cycle de r&#233;alisation, registre concret).</p>
+
+<p>Le passage d'un Cycle &#224; l'autre se fait progressivement. Une certaine acclimatation est n&#233;cessaire. L'influence du Cycle ne fonctionne &#224; plein qu'au d&#233;but de l'ann&#233;e personnelle 1 la plus proche de cette transition entre cycles. Le Cycle formatif correspond au nombre du mois de naissance r&#233;duit ; le Cycle productif correspond au nombre r&#233;duit du jour de naissance et le Cycle de moisson au nombre r&#233;duit de l'ann&#233;e de naissance.</p>
+
+<h4>Cycle formatif de l'an 1970 - 2001</h4>
+
+<p><strong>Vous &#234;tes en Cycle formatif 8.</strong> Une p&#233;riode tr&#232;s tonique en perspective. Tr&#232;s t&#244;t, vous manifesterez une attirance pour les activit&#233;s li&#233;es &#224; la comp&#233;tition, aux r&#233;alisations concr&#232;tes, &#224; l'organisation. Relever des d&#233;fis, vous montrez efficace, combative sont des notions qui feront &#233;cho en vous. Cette m&#234;me pr&#233;cocit&#233; peut se manifester dans l'int&#233;r&#234;t pour l'&#233;tablissement d'une hi&#233;rarchie (dans la fratrie, &#224; l'&#233;cole) et pour le sens de la justice. L'int&#233;ress&#233;e apprendra d'ailleurs assez t&#244;t la valeur de l'argent. Temp&#233;rament, fougue et go&#251;t de l'affrontement marqueront ces ann&#233;es comme autant de phases n&#233;cessaires &#224; la construction de votre personnalit&#233;. Une vigueur et une maturit&#233; qui surprendront quelque peu votre entourage. Cette efficacit&#233; contribuera &#224; votre ascension sociale ult&#233;rieure. Il faudra cependant veiller &#224; garder le sens de la mesure: un minimum de diplomatie sur le plan relationnel, savoir garder la t&#234;te froide ou encore &#233;viter de crier victoire trop vite. Si l'&#233;nergie de ce Cycle formatif 8 s'impose avec trop de force pour vos jeunes &#233;paules (trop d'argent jeune, trop de comp&#233;tition,...) vous risquez de ne pas trouver en vous la saine coh&#233;rence, l'assise n&#233;cessaire pour bien d&#233;marrer votre vie d'adulte. En effet, l'&#233;nergie du 8 ne convient pas aux gens qui rechignent &#224; l'utiliser. Plut&#244;t que de rejeter cet axe psychologique que la vie vous invite &#224; suivre, t&#226;chez de vous en servir progressivement.</p>
+
+<p>Ce Cycle formatif incite &#224; manifester du temp&#233;rament (&#224; nuancer en cas de nombre d'Expression usuelle ou d'&#201;lan spirituel de type 2, 6, 7, 9). Les parents concentreront leur message &#233;ducatif davantage sur la ma&#238;trise de l'&#233;nergie et sur les valeurs morales. Le sport, les activit&#233;s de plein air joueront le r&#244;le de r&#233;gulateur en l'aidant &#224; se d&#233;penser naturellement. Mais c'est au niveau des facilit&#233;s mat&#233;rielles et financi&#232;res qu'il faudra se montrer mesur&#233;. Pas question de l'habituer &#224; l'argent facile. Il serait plus judicieux de lui apprendre la valeur du travail, de l'organisation, de la gestion et la diff&#233;rence entre d&#233;penses utiles et inutiles. C'est dans un axe constructif que l'enfant devra faire ses preuves et se valoriser. Encouragez-le &#224; d&#233;fendre ses int&#233;r&#234;ts, &#224; clarifier ses options et &#224; trouver sa place dans la course sociale tout en restant bien &#233;lev&#233; bien entendu. N'oubliez pas de lui enseigner les vertus de la g&#233;n&#233;rosit&#233;, de la patience et de la bienveillance car ce genre de consid&#233;rations risque d'&#234;tre quelque peu refoul&#233; lors de cette p&#233;riode.</p>
+
+<h4>Cycle productif de l'an 2002 - 2028</h4>
+
+<p><strong>Vous &#234;tes en Cycle productif 7.</strong> Une tranche de vie tranquille, souvent studieuse durant laquelle la vie int&#233;rieure aura une grande importance. Option sera prise par l'int&#233;ress&#233;e de d&#233;laisser quelque peu l'agitation de la vie sociale pour privil&#233;gier les occupations de r&#233;flexion, d'observation, pour se cultiver, pour s'int&#233;resser &#224; la psychologie, la philosophie et bien d'autres secteurs d'ordre intellectuels. Cette p&#233;riode sera celle d'un nouvel &#233;veil ; une p&#233;riode ouverte &#224; de nouvelles &#233;tudes, aux recherches personnelles, aux travaux d'&#233;criture, &#224; l'informatique. Davantage de cr&#233;ativit&#233; et sans doute aussi un attrait pour le monde spirituel. Avoir l'esprit ouvert, en demande constante de connaissances est certes passionnant mais pareille orientation fait oublier d'autres r&#233;alit&#233;s comme engranger de l'argent ou veiller &#224; la qualit&#233; de votre sph&#232;re affective. Une phase au cheminement parfois lent, ind&#233;pendant et souvent solitaire. Pour pr&#233;server son &#233;quilibre, il faudra se m&#233;nager des moments de tranquillit&#233;. Un Cycle propice &#233;galement &#224; l'originalit&#233;, ne serait-ce qu'en se d&#233;tachant quelque peu de la masse. Votre image &#233;tant difficile &#224; appr&#233;hender, des malentendus sont possibles. Seront favoris&#233;es les relations (y compris maritales) o&#249; l'&#233;change intellectuel est pr&#233;pond&#233;rant. Travaillez un peu &#224; votre image, assouplissez votre attitude, rayonnez davantage (joie de vivre) pour renforcer cette &#233;ventuelle faiblesse. Travaillez &#233;galement votre sens pratique et faites r&#233;guli&#232;rement du sport. Ainsi, vous serez un exemple d'&#233;quilibre.</p>
+
+<p>Les seuls travers de ce genre d'orientation psychologique d&#233;couleraient d'un go&#251;t excessif pour l'isolement, pour les approches trop rationnelles (pas assez intuitive ni terre &#224; terre). Prenez un peu de hauteur mais pas au prix d'un d&#233;tachement excessif par rapport aux r&#233;alit&#233;s terrestres et comptables. Soyez prudente avec vos investissements au cours de ce cycle ; vous pourriez faire des erreurs de "calcul".</p>
+
+<h4>Cycle de moisson &#224; partir de l'an 2029</h4>
+
+<p><strong>Vous &#234;tes en Cycle de la moisson 8.</strong> Une "retraite" plut&#244;t active. Priorit&#233; sera donn&#233;e aux r&#233;alisations concr&#232;tes, &#224; l'organisation et la comp&#233;tition. Relever des d&#233;fis, vous montrer efficace, combative sont des concepts qui continuent &#224; faire &#233;cho dans votre esprit. Les notions de pouvoir, de hi&#233;rarchie, de r&#233;ussite sociale et de gestion de votre patrimoine rev&#234;tiront &#233;galement un int&#233;r&#234;t accru dans votre esprit. Vous continuez &#224; bien occuper le terrain, &#224; &#234;tre un acteur cl&#233; de votre famille. Du temp&#233;rament, une certaine duret&#233; et un fort dynamisme marqueront ces ann&#233;es. Attention au surmenage. Sur le plan psychique, cette p&#233;riode de gestion et de prise de d&#233;cision sera tout aussi intense. Pour bien garder l'&#233;quilibre, il convient de ne pas n&#233;gliger le monde relationnel avec une part de diplomatie, g&#233;n&#233;rosit&#233; et chaleur affective. L'ambition, le d&#233;sir d'efficacit&#233;, la course sociale, l'impatience ne font pas bon m&#233;nage avec les n&#233;cessit&#233;s d'une harmonie affective. Utilisez votre pouvoir financier pour aider ceux que vous aimez et qui sont suffisamment matures pour faire bon-usage de votre appui.</p>
+
+<hr style="width: 85%" />
+<p>Nous esp&#233;rons que votre analyse num&#233;rologique vous a apport&#233; un &#233;clairage nouveau sur votre personnalit&#233; et votre vie. Nul doute qu'en prenant conscience de vos potentiels et des "vents dominants" que vous allez rencontrer sur votre trajet, vous saurez en tirer avantage pour une meilleure qualit&#233; de vie.</p>
+
+<p>&#201;tude &#233;tablie par Yves Pflieger. Tous droits r&#233;serv&#233;s. &copy; Association fran&#231;aise de num&#233;rologie & Yves Pflieger.</p>
+</body>
+</html>
+
+</body></html>
+

@@ -1,0 +1,3007 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+    <meta id="DESCRIPTION" content="Etude num&#233;rologique personnelle - Calendrier et Pr&#233;visions num&#233;rologiques 
+		g&#233;n&#233;r&#233; par le logiciel Num&#233;rologie par Yves Pflieger." />
+    <meta id="KEYWORDS" content="logiciel, logiciel de num&#233;rologie, YvesPflieger, Yves Pflieger" />
+    <title>Num&#233;rologie</title>
+
+    </script>
+    <style type="text/css">
+        html
+        {
+			font-size: 100%;
+            background-color: #FFFFFF; /*#FFF0F5;*/
+        }
+        body
+        {
+			font-size: 1em;
+            background-color: #FFFFFF; /*#FFF0F5;*/
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        span.titreNom
+        {
+            font-size: 40px;
+            text-align: center;
+            color: Teal;
+            font-style: italic;
+            font-family: "Segoe UI" , "Segoe WP Semilight", "Georgia" , "Times New Roman";
+            font-weight: 600;
+        }
+        h1
+        {
+            font-size: 2.2em;
+            text-align: center;
+            letter-spacing: 0px;
+            color: white; /*#333333;*/
+            background-color: #1BA1E2;
+            font-family: "Segoe UI" , "Segoe WP Semilight" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: normal;
+            padding: 5pt 0 10pt 0;
+            margin-top: 0px;
+            margin-bottom: 25px;
+        }
+        h2
+        {
+            font-size: 1.8em;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #333333;
+            line-height: 130%;
+            font-family: "Segoe UI", Arial, Tahoma, Verdana, Calibri;
+            font-weight: normal;
+            margin-top: 0px;
+            margin-bottom: 15px; /*font-variant: small-caps; font-style: italic;*/
+        }
+		h3
+        {
+            font-size: 1.7em;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #1ba1e2;
+            line-height: 30px;
+            font-family: "Segoe UI", "Segoe UI Light", "Segoe WP" , Arial, Tahoma, Verdana, Calibri;
+            font-variant: small-caps;
+            font-weight: normal;
+            margin-top: 0px;
+            margin-bottom: 15px;
+        }
+        h4
+        {
+            font-size: 1.55em;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #333333;
+            line-height: 28px;
+            font-family: "Segoe UI", "Segoe WP" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: 600;
+            margin-top: 0px;
+            margin-bottom: 35px;
+        }
+        span.lien
+        {
+            font-size: 1.2em;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #333333;
+            line-height: 130%;
+            font-family: "Segoe UI" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: normal;
+            margin-top: 0px;
+            margin-bottom: 18px;
+            padding: 0 0 4px 0;
+        }
+        span.commentaire
+        {
+            font-size: 1.2em;
+            text-align: left;
+            color: #339933;
+            font-style: normal;
+            font-family: "Segoe UI" , "Segoe WP Semibold" , "Georgia" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: 400;
+            margin-bottom: 10pt; /*background-color: #1BA1E2;*/
+            display: block; /* letter-spacing: 1px;         line-height: 31px; */
+        }
+        p, td
+        {
+            font-size: 1.15em;
+            line-height: 1.3em;
+            text-align: justify; /* left; justify; */
+            letter-spacing: 0px;
+            color: Black; /*#666666;*/
+            font-family: "Segoe UI" , "Segoe WP" , Arial, Tahoma, Verdana, Calibri;
+            /*font-weight: normal;*/
+            margin-top: 0px;
+            margin-bottom: 30px; /* text-indent: 5%; */
+        }
+        p.datenaissance
+        {
+            font-size: 1.6em;
+            color: #1ba1e2;
+            font-family: ""Segoe UI", Segoe WP";
+            font-variant: small-caps;
+            margin-top: 0px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        p.sousnombre
+        {
+            font-size: 1.1em;
+            background-color: #E8E8E8;
+            padding: 15px 25px 15px 25px;
+        }
+        ul
+        {
+            color: #666666;
+            font-family: "Segoe WP Semilight" , "Segoe UI";
+            font-weight: normal;
+            letter-spacing: 0px;
+            list-style-type: none;
+            margin-bottom: 30px;
+            margin-top: 18px;
+            margin-left: 0px;
+            text-align: left;
+        }
+        ol
+        {
+			font-size: 1.2em;
+            line-height: 130%;
+            margin-right: 30px;
+            text-align: justify;
+            list-style-type: upper-roman;
+        }
+        li
+        {
+            color: #666666;
+            font-family: "Segoe WP" , "Segoe UI";
+            font-weight: normal;
+            letter-spacing: 0px;
+            margin: 0; /* margin-bottom: 10px; */
+            text-align: left;
+            padding: 5px 5px 5px 10px; /*--Adds padding around each item--*/
+        }
+        .itemBody
+        {
+            font-size: 1.15em;
+            color: #666666;
+            display: block;
+            font-family: "Segoe WP Semilight" , "Segoe UI";
+            font-weight: normal;
+            letter-spacing: 0px;
+            line-height: 32px;
+            margin-left: 50px;
+            margin-top: -35px;
+            text-align: left;
+        }
+        .accent
+        {
+            font-size: 1.15em;
+            color: #1ba1e2;
+            font-family: "Segoe WP Semilight" , "Segoe UI";
+            font-weight: normal;
+            letter-spacing: 0px;
+            line-height: 32px;
+            list-style-type: none;
+            text-align: left;
+        }
+        A
+        {
+            text-decoration: none; /* underline; */
+            color: WindowText;
+        }
+        table
+        { 
+			text-align: center;
+			border-collapse:collapse;			
+        }
+        th 
+		{
+         	font-family:"Segoe WP Semilight" , "Segoe UI", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+		}
+        .Violet
+        {
+            font-size: 1em;
+            color: #A200FF;
+            font-family: "Segoe WP Semilight" , "Segoe UI" , Arial, Tahoma, Verdana, Calibri;
+        }
+        .piedDePage
+        {
+            font-size: 1em;
+            letter-spacing: 0px;
+            color: #339933; /*line-height: 28px;*/
+            font-family: "Segoe UI" , "Segoe WP" , Arial, Tahoma, Verdana, Calibri;
+            font-weight: normal;
+			margin-bottom: 0px;
+        }
+		.anneepAffectifClef
+		{
+		}
+    </style>
+</head>
+<body>
+
+<h1>Andr&#233;e Fran&#231;oise Lacombe</h1>
+
+<p class='datenaissance'>mardi 25 ao&#251;t 1970</p>
+
+<p class='datenaissance'>avril 2013 - mai 2013</p>
+
+    <center>TABLE DES MATI&#200;RES</center>
+    <ol>
+        <li>PR&#201;VISIONS G&#201;N&#201;RALES DE LA VIE
+            <ol style="list-style-type: none">
+                <li><a href="#Cycle">Les 3 Cycles de votre vie</a></li>
+                <li><a href="#Apogee">Apog&#233;es ou cycles des r&#233;alisations</a></li>
+            </ol>
+        </li>
+        <li>ANN&#201;E PERSONNELLE
+            <ol style="list-style-type: none">
+                <li><a href="#Annee">Ann&#233;e personnelle</a></li>
+                
+                
+                
+                <li><a href="#Mois04">Avril</a></li>
+                <li><a href="#Mois05">Mai</a></li>
+                
+                
+                
+                
+                
+                
+                
+            </ol>
+        </li>
+    </ol>
+    <h2>
+        Vos pr&#233;visions num&#233;rologiques personnelles</h2>
+    <p>
+        Votre calendrier num&#233;rologique personnel vous permet de conna&#238;tre la nature des situations auxquelles vous serez confront&#233;e au cours des prochains mois. Vous pourrez ainsi ajuster votre strat&#233;gie dans les domaines professionnels et priv&#233;s. Les pr&#233;visions journali&#232;res et mensuelles s'ins&#232;rent dans le contexte plus global des vibrations de votre Ann&#233;e personnelle. Il est &#233;galement utile de resituer ces pr&#233;visions dans le contexte psychologique de votre Cycle de vie actuel. Comprenez bien que les vibrations d&#233;crites dans ces pr&#233;visions num&#233;rologiques vous informent sur les conditions g&#233;n&#233;rales que vous allez rencontrer. Pour un marin cela signifierait : &#233;tat de la mer, orientation des courants, direction et force du vent, pr&#233;sence &#233;ventuelle d'une zone de r&#233;cifs. En revanche, pas d'information sur les &#233;v&#232;nements exceptionnels tels que panne de moteur, incendie en cale, contagion infectieuse &#224; bord ou pr&#233;sence de baleines non loin du navire. Les vibrations d&#233;crites sont bien r&#233;elles mais leur impact peut &#234;tre surpass&#233; ou occult&#233; par des &#233;v&#232;nements fortuits ayant un impact plus puissant (naissance ou deuil, accident majeur, maladie grave, forte contrari&#233;t&#233;, agression). Une rupture sentimentale mal v&#233;cue aura des effets n&#233;gatifs prolong&#233;s venant occulter largement les bonnes vibrations pr&#233;vues les jours ou les mois suivants. De m&#234;me, votre comportement, bon ou mauvais, peut amplifier ou att&#233;nuer une vibration favorisant une certaine journ&#233;e. Mais dans tous les cas ces vibrations existent et elles vous baignent de leur influence. Bien entendu, si vous &#234;tes momentan&#233;ment sans emploi, les vibrations influen&#231;ant l'univers professionnel ne vous concerneront pas vraiment. Il est possible d'affiner la pr&#233;vision pour une p&#233;riode ou un probl&#232;me donn&#233; en ayant recours au Yi-King, au Tarot de Marseille ou &#224; la voyance afin d'obtenir plus d'indices.</p>
+    <p>
+        Vous &#234;tes le capitaine de votre navire, c'est &#224; vous de naviguer au mieux en tirant parti des informations g&#233;n&#233;rales et d&#233;taill&#233;es donn&#233;es par votre calendrier num&#233;rologique. Utilisez cet outil pour planifier plus finement votre emploi du temps dans diff&#233;rents secteurs de votre vie. Rappelez-vous que tout bon capitaine est avant tout pr&#233;voyant afin d'user de son libre-arbitre dans de bonnes conditions.</p>
+ <p>
+ Votre calendrier se compose d'une description de votre Ann&#233;e personnelle, suivie par vos Mois et vos Jours personnels. Le contexte vibratoire g&#233;n&#233;ral du Jour personnel est compl&#233;t&#233; par des indications horaires relatives aux possibilit&#233;s d'action. Vous connaitrez ainsi, heure par heure, les p&#233;riodes propices &#224; l'action, aux d&#233;marches mais aussi les p&#233;riodes plus d&#233;licates o&#249; il faut &#233;viter de s'emporter ou de s'engager trop &#224; la l&#233;g&#232;re. En cas d'heures "noires", le fait de se pr&#233;parer psychologiquement &#224; la prudence rend souvent la situation beaucoup moins d&#233;licate. Avec un peu d'entra&#238;nement vous arriverez &#224; mieux ma&#238;triser votre qualit&#233; de vie et influer quelque peu sur votre destin. Voici la signification des sigles horaires :</p>
+    <table align="center">
+        <tr>
+            <td style="width: 20px; background-color: #00cc00; color: #00cc00">
+                &hearts;</td>
+            <td>
+                &nbsp;P&#233;riode excellente pour entreprendre, d&#233;marcher et intervenir.</td>
+        </tr>
+        <tr>
+            <td style="width: 20px; background-color: #336600; color: #336600">
+                &clubs;</td>
+            <td>
+                &nbsp;Bonne p&#233;riode pour les initiatives.</td>
+        </tr>
+        <tr>
+            <td style="width: 20px; background-color: Red; color: Red">
+                &diams;</td>
+            <td>
+                &nbsp;Prudence, tout ne marche pas comme pr&#233;vu !</td>
+        </tr>
+        <tr>
+            <td style="width: 20px; background-color: Black; color: Black">
+                &spades;</td>
+            <td>
+                &nbsp;Tenez-vous en retrait, interventions inopportunes !</td>
+        </tr>
+    </table>
+	<br/>
+    <p>
+        Le texte de vos pr&#233;visions journali&#232;res d&#233;crit l'ambiance, le climat dans lequel vous baignez. Lorsqu'il y a contradiction apparente entre la bandelette horaire et le texte descriptif, comprenez que le texte d&#233;crit un contexte g&#233;n&#233;ral tandis que les p&#233;riodes horaires indiquent plut&#244;t les opportunit&#233;s d'action ou les heures requ&#233;rant la prudence. Dans un Mois personnel donn&#233; vous ne pouvez vivre que 9 Jours personnels diff&#233;rents, ce qui signifie que cette famille de vibrations se r&#233;p&#232;tera trois &#224; quatre fois le m&#234;me mois.</p>
+
+<h2>Les 3 Cycles de votre vie<a id="Cycle"></a></h2>
+
+<p>La Num&#233;rologie divise la vie en 3 Cycles. Le premier Cycle dit formatif dure 365 lunaisons (28 ans et 4 mois), le second Cycle dit productif a la m&#234;me dur&#233;e et s'ach&#232;ve apr&#232;s 56 ans. Le 3e Cycle dit de moisson s'&#233;tend sur le reste de la vie. &#192; chaque cycle correspond une vibration particuli&#232;re donnant une orientation g&#233;n&#233;rale d'ordre psychologique &#224; l'ensemble de cette p&#233;riode. Un Cycle psychologique nous parle de nos go&#251;ts, de nos priorit&#233;s, de nos centres d'int&#233;r&#234;ts et projets. Cette orientation change avec l'apparition d'un nouveau Cycle de vie. Ce changement d'orientation vers l'&#226;ge de 28 ou 56 ans engendre parfois certaines divergences dans le couple si l'un devient subitement casanier alors que l'autre &#233;prouve le besoin de voyager, sortir, d&#233;couvrir. L'influence d'un Cycle psychologique est plus marquante pour un individu que celle de l'Apog&#233;e (cycle de r&#233;alisation, registre concret).</p>
+
+<p>Le passage d'un Cycle &#224; l'autre se fait progressivement. Une certaine acclimatation est n&#233;cessaire. L'influence du Cycle ne fonctionne &#224; plein qu'au d&#233;but de l'ann&#233;e personnelle 1 la plus proche de cette transition entre cycles. Le Cycle formatif correspond au nombre du mois de naissance r&#233;duit ; le Cycle productif correspond au nombre r&#233;duit du jour de naissance et le Cycle de moisson au nombre r&#233;duit de l'ann&#233;e de naissance.</p>
+
+<h4>Cycle productif de l'an 2002 - 2028</h4>
+
+<p><strong>Vous &#234;tes en Cycle productif 7.</strong> Une tranche de vie tranquille, souvent studieuse durant laquelle la vie int&#233;rieure aura une grande importance. Option sera prise par l'int&#233;ress&#233;e de d&#233;laisser quelque peu l'agitation de la vie sociale pour privil&#233;gier les occupations de r&#233;flexion, d'observation, pour se cultiver, pour s'int&#233;resser &#224; la psychologie, la philosophie et bien d'autres secteurs d'ordre intellectuels. Cette p&#233;riode sera celle d'un nouvel &#233;veil ; une p&#233;riode ouverte &#224; de nouvelles &#233;tudes, aux recherches personnelles, aux travaux d'&#233;criture, &#224; l'informatique. Davantage de cr&#233;ativit&#233; et sans doute aussi un attrait pour le monde spirituel. Avoir l'esprit ouvert, en demande constante de connaissances est certes passionnant mais pareille orientation fait oublier d'autres r&#233;alit&#233;s comme engranger de l'argent ou veiller &#224; la qualit&#233; de votre sph&#232;re affective. Une phase au cheminement parfois lent, ind&#233;pendant et souvent solitaire. Pour pr&#233;server son &#233;quilibre, il faudra se m&#233;nager des moments de tranquillit&#233;. Un Cycle propice &#233;galement &#224; l'originalit&#233;, ne serait-ce qu'en se d&#233;tachant quelque peu de la masse. Votre image &#233;tant difficile &#224; appr&#233;hender, des malentendus sont possibles. Seront favoris&#233;es les relations (y compris maritales) o&#249; l'&#233;change intellectuel est pr&#233;pond&#233;rant. Travaillez un peu &#224; votre image, assouplissez votre attitude, rayonnez davantage (joie de vivre) pour renforcer cette &#233;ventuelle faiblesse. Travaillez &#233;galement votre sens pratique et faites r&#233;guli&#232;rement du sport. Ainsi, vous serez un exemple d'&#233;quilibre.</p>
+
+<p>Les seuls travers de ce genre d'orientation psychologique d&#233;couleraient d'un go&#251;t excessif pour l'isolement, pour les approches trop rationnelles (pas assez intuitive ni terre &#224; terre). Prenez un peu de hauteur mais pas au prix d'un d&#233;tachement excessif par rapport aux r&#233;alit&#233;s terrestres et comptables. Soyez prudente avec vos investissements au cours de ce cycle ; vous pourriez faire des erreurs de "calcul".</p>
+
+<h2>Apog&#233;es ou cycles des r&#233;alisations de vie<a id="Apogee"></a></h2>
+
+<p>Votre vie se divise en quatre apog&#233;es ou cycles de r&#233;alisation. Il s'agit d'un registre yin plus tangible correspondant &#224; nos actions, nos choix concrets et &#224; la mise en oeuvre de nos id&#233;es. L'Apog&#233;e vient compl&#233;ter l'interpr&#233;tation obtenue &#224; partir du Cycle de vie (de nature yang ou masculine) et qui se rapporte &#224; nos projets, nos options psychologiques. Le premier apog&#233;e s'&#233;tend jusqu'&#224; un &#226;ge variant de 27 &#224; 35 ans, le deuxi&#232;me et le troisi&#232;me ont une dur&#233;e de 9 ans chacun et le quatri&#232;me apog&#233;e vous accompagnera jusqu'&#224; la fin de votre vie. Cet explicatif donne un cadre concret &#224; celui de votre Cycle de vie permettant ainsi de mieux situer l'influence de votre Ann&#233;e personnelle. L'&#233;tude de la succession des cycles et apog&#233;es permet de mieux cerner les nuances dans l'&#233;volution de vos options et centres d'int&#233;r&#234;t au cours de votre existence. Ainsi, si votre cycle psychologique vaut 7 et votre apog&#233;e 3, l'orientation intellectuelle pr&#233;&#233;minente pendant la dur&#233;e de votre cycle trouvera sans doute un d&#233;bouch&#233; concret dans la cr&#233;ativit&#233;, la communication (ouvrage, articles,  etc.). Chaque apog&#233;e s'interpr&#232;te en gardant en arri&#232;re-plan cette filiation h&#233;rit&#233;e de la nature du cycle en cours.</p>
+
+<p>Le calcul s'effectue de la mani&#232;re suivante: Apog&#233;e 1 = jour naissance + mois naissance; Apog&#233;e 2 = jour naissance + ann&#233;e naissance; Apog&#233;e 3 = apog&#233;e 1 + apog&#233;e 2; Apog&#233;e 4 = mois naissance + ann&#233;e naissance.</p>
+
+<h4>En 2013, vous &#234;tes dans votre 3e apog&#233;e de valeur 3</h4>
+<h4>Les Apog&#233;es de valeur 3</h4>
+
+<p>La vibration 3 est une vibration favorable &#224; l'expression de soi (orale, &#233;crite, corporelle, artistique). Une p&#233;riode de milieu de vie propice &#224; la cr&#233;ativit&#233;, &#224; la communication, aux relations et au positionnement social. R&#233;seau social riche et profitable (pensez &#224; bien l'entretenir et &#224; "renvoyer l'ascenseur"). De bons r&#233;sultats dans le domaine sentimental &#233;galement. Une joie de vivre et une belle motivation, facteurs utiles pour mener &#224; bien vos projets. Si d'autres vibrations et contextes favorables se conjuguent &#224; cet apog&#233;e, il peut en r&#233;sulter des facilit&#233;s et de beaux succ&#232;s. Veillez toutefois &#224; employer correctement ces avantages, notamment sans vous disperser ni croire que tout sera toujours si facile. Un minimum de discipline vous aidera &#224; tirer le meilleur parti de cette vibration int&#233;ressante que le destin vous a octroy&#233;.</p>
+
+<h2>
+Andr&#233;e Fran&#231;oise Lacombe
+2013
+<a id='Annee'></a></h2>
+
+<p>Vous avez une Ann&#233;e personnelle 3. <strong>Optimisme, cr&#233;ativit&#233;, sociabilit&#233;.</strong></p>
+
+<p>R&#233;sum&#233; : Deuxi&#232;me chance de d&#233;marrage. Ann&#233;e de succ&#232;s, de cr&#233;ativit&#233; (possible oeuvre). Vie sociale soutenue (invitations). Motivation &#224; s'exprimer, communiquer. Envie de s&#233;duire, flirter. Ann&#233;e souvent heureuse.</p>
+
+<p>Une excellente ann&#233;e, riche en impulsions cr&#233;atives, id&#233;es nouvelles et &#233;changes tous azimuts s'offre &#224; vous ! Les projets mis en oeuvre en ann&#233;e 1 et 2 donnent g&#233;n&#233;ralement leurs fruits en ann&#233;e 3. Cette ann&#233;e est gouvern&#233;e par une vibration qui favorise l'optimisme, la joie de vivre et l'expression de soi. N'h&#233;sitez pas &#224; adh&#233;rez &#224; cette orientation pour &#234;tre en phase avec le contexte qui vous attend et vivre ainsi douze mois positifs.</p>
+
+<p>Profitez de ce cadre vibratoire pour vous exprimer davantage par les diff&#233;rents moyens que la vie vous offre. Vous pourriez, par exemple, red&#233;couvrir les plaisirs du dessin, de la d&#233;coration ou des lettres manuscrites fa&#231;on vieille France. &#201;largissez &#233;galement votre cercle relationnel, montrez-vous sous un jour sympathique, ayez recours &#224; quelques touches d'humour et affichez votre joie de vivre. Pensez &#224; appronfondir quelques sujets pour avoir des choses int&#233;ressantes &#224; dire. Cette p&#233;riode est aussi celle des loisirs, du sport, de l'expression corporelle autant d'axes susceptibles de contribuer &#224; votre &#233;panouissement. Le contexte particulier de cette ann&#233;e sera l'occasion de vous exprimer davantage, surtout si votre personnalit&#233; usuelle ne vous y incitait pas compl&#232;tement. Profitez bien de ce courant porteur pour &#234;tre heureux, pour vous offrir certains plaisirs surtout que l'ann&#233;e prochaine risque d'&#234;tre moins agr&#233;able. Mais inutile de trop d&#233;penser, les bonheurs simples, authentiques sont souvent les plus marquants.</p>
+
+<h3>Plan professionnel</h3>
+
+<p>Vous b&#233;n&#233;ficiez d'un cadre vibratoire favorable &#224; votre &#233;panouissement personnel. Saisissez cette perche &#233;galement dans votre univers professionnel si le contexte le permet. L'ann&#233;e 3 favorise surtout les secteurs professionnels li&#233;s &#224; la communication (m&#233;dias, publicit&#233;, relations publiques, &#233;crits), &#224; la vente, &#224; la culture, &#224; l'art et aux &#233;changes. T&#226;chez de mieux vous mettre en valeur pour renforcer indirectement votre statut hi&#233;rarchique. Mettez l'accent sur votre vivacit&#233; d'esprit, votre cr&#233;ativit&#233; et votre sens du contact. Bien entendu, donnez-vous une base technique, un savoir, une l&#233;gitimit&#233; pour asseoir cette nouvelle aura sur du concret. Certaines personnes profitent d'une ann&#233;e 3 pour &#233;largir leur champ d'action ou pour changer d'activit&#233;. D'autres r&#233;veillent leur fibre cr&#233;atrice en dehors de leur travail usuel. La vibration 3 favorise ceux qui d&#233;cideront de s'ext&#233;rioriser, de cr&#233;er et d'&#233;changer.</p>
+
+<p>Cette vibration 3 peut &#233;galement &#234;tre mise &#224; profit sur le plan personnel. Vous pourriez ainsi vous d&#233;couvrir certaines capacit&#233;s, accro&#238;tre votre capital confiance et rayonner davantage. Mettez en avant votre bonne humeur, votre imagination. Vous am&#233;liorerez ainsi votre image sociale. Se changer est aussi l'occasion d'acc&#233;der &#224; une partie plus ou moins cach&#233;e de votre potentiel. Ce genre d'exp&#233;rience est tr&#232;s enrichissant et valorisant. Votre sensibilit&#233; se modifiera, vous verrez le monde diff&#233;remment. Faites provision de gaiet&#233; au cours de cette ann&#233;e 3. Sortez de vos limites habituelles, utilisez votre dynamisme pour faire de nouvelles choses, am&#233;liorer votre savoir-faire, vos connaissances mais aussi pratiquer du sport. Toute m&#233;daille a son revers et pour r&#233;ussir ces douze prochains mois veillez &#224; ne pas franchir certaines limites. Si l'enthousiasme est propre &#224; cette vibration elle peut aussi inciter aux attitudes superficielles (petits bavardages sans int&#233;r&#234;t, &#233;parpillement, d&#233;penses inconsid&#233;r&#233;es). M&#233;fiez-vous de ces travers. Privil&#233;giez l'authenticit&#233;, la cr&#233;ativit&#233;. Prenez &#233;galement garde &#224; ce que vous dites ou &#233;crivez; soyez s&#251;re de ne jamais le regretter.</p>
+
+<h3>Plan sentimental</h3>
+
+<p>Fort de votre bonne humeur, votre rayonnement va s'accroitre et les occasions de flirt aussi. Si l'ann&#233;e 3 est b&#233;n&#233;fique aux sentiments, il faut n&#233;anmoins conserver la t&#234;te sur les &#233;paules sachant qu'une rencontre peut ne mener &#224; rien ou rien de positif. &#201;vitez aussi les impairs regrettables si vous &#234;tes d&#233;j&#224; engag&#233;e. Dans ce petit jeu des &#233;changes l&#233;gers m&#233;fiez-vous de ne pas chercher &#224; en faire trop (occuper absolument le devant de la sc&#232;ne). L'incitation est plus ou moins inconsciente. Sachez garder une juste mesure pour &#234;tre appr&#233;ci&#233;e. Une ann&#233;e 3 peut voir la naissance d'une oeuvre cr&#233;ative ou peut-&#234;tre d'un enfant pour votre couple. Si malgr&#233; tout l'ann&#233;e devait mal se d&#233;rouler sur le plan relationnel, il serait n&#233;cessaire de prendre de la hauteur, de changer de prisme. Mais toujours avec sagesse sans laisser la morosit&#233; gouverner votre esprit avec de possibles retomb&#233;es n&#233;gatives sur le bon fonctionnement de votre corps.</p>
+
+<p>Variations selon votre nombre cl&#233; : jour naissance + mois naissance. <b>Cl&#233; 6 : Une certaine fragilit&#233; &#233;motionnelle pr&#233;vaudra chez les c&#233;libataires qui feront une rencontre susceptible de leur apporter la tendresse qu'ils r&#233;clament. Cette liaison ne devrait semble-t-il pas &#234;tre d&#233;finitive. Si vous vivez en couple, vos sentiments trouveront davantage de fra&#238;cheur, de simplicit&#233; et cette attitude sera b&#233;n&#233;fique &#224; votre vie commune.</b></p>
+
+<h3>Plan sant&#233;</h3>
+
+<p>Une p&#233;riode caract&#233;ris&#233;e par un grand dynamisme soutenu par un bel optimisme. Si vous avez tendance &#224; &#234;tre gourmande, cette vibration 3 pourrait bien vous pousser &#224; commettre quelques exc&#232;s alimentaires. &#201;vitez absolument de finir les tablettes de chocolat ; il suffit de regarder de plus pr&#232;s les kilocalories figurant au dos de l'emballage pour s'en convaincre. Cette ann&#233;e se pr&#234;te volontiers aux changements d'apparence vestimentaire, aux soins du corps et aux remises en forme.</p>
+
+<h4>&#192; partir du 1 janvier jusqu'au 31 mars 2013</h4>
+
+<p>Apog&#233;e de l'ann&#233;e de valeur 3. C'est une p&#233;riode favorable pour se montrer cr&#233;ative et communicative.</p>
+
+<h4>&#192; partir du 1 avril jusqu'au 30 juin 2013</h4>
+
+<p>Apog&#233;e de l'ann&#233;e de valeur 9. P&#233;riode plut&#244;t r&#233;serv&#233;e pour r&#233;gler les probl&#232;mes, conclure ce qui a &#233;t&#233; engag&#233; auparavant mais aussi pour sortir de son cadre habituel et savoir faire preuve d'altruisme, d'aide d&#233;sint&#233;ress&#233;e.</p>
+
+
+<h4>&#192; partir du 1 juillet jusqu'au 30 septembre 2013</h4>
+
+<p>Apog&#233;e de l'ann&#233;e de valeur 3. C'est une p&#233;riode favorable pour se montrer cr&#233;ative et communicative.</p>
+
+<h4>&#192; partir du 1 octobre jusqu'au 31 d&#233;cembre 2013</h4>
+
+<p>Apog&#233;e de l'ann&#233;e de valeur 9. P&#233;riode plut&#244;t r&#233;serv&#233;e pour r&#233;gler les probl&#232;mes, conclure ce qui a &#233;t&#233; engag&#233; auparavant mais aussi pour sortir de son cadre habituel et savoir faire preuve d'altruisme, d'aide d&#233;sint&#233;ress&#233;e.</p>
+
+
+<h4>jusqu'au dimanche 25 ao&#251;t 2013</h4>
+
+<p><strong>Essence 7.</strong> L'accent est mis sur la r&#233;flexion, le savoir, la recherche, la philosophie et l'amiti&#233; intellectuelle. L'int&#233;riorit&#233;, le besoin d'ind&#233;pendance ou de solitude seront &#233;galement pr&#233;sents. Les finances peuvent &#234;tre favoris&#233;es pour autant que vous laissez venir les choses &#224; vous. Si l'Ann&#233;e personnelle est &#233;galement de valeur 7, la double vibration risque d'&#234;tre mal ma&#238;tris&#233;e et il faut s'attendre &#224; une phase de repli sur soi, d'illusions, de d&#233;sespoir ou de r&#233;volte pouvant &#233;ventuellement d&#233;boucher sur une &#233;volution spirituelle si la s&#233;r&#233;nit&#233; et le bon sens ne sont pas perdus. La pr&#233;sence d'une troisi&#232;me vibration de m&#234;me valeur (au niveau du Cycle ou de l'Apog&#233;e de vie) aura par contre un effet b&#233;n&#233;fique.</p>
+
+<p><strong>Maison 7.</strong> Difficile &#224; interpr&#233;ter. Se rapporte au concept de partenariat, &#224; l'union, aux contrats, aux associations, au mariage (v&#233;cu) mais aussi parfois &#224; une &#233;volution dans la mani&#232;re "d'accepter" l'autre.</p>
+
+<p>passe avec la</p>
+
+<p><strong>Maison 1.</strong> Positive. Concerne l'individu, sa personnalit&#233; (affirmation de soi, nouvel &#233;quilibre psychologique) et ses possibilit&#233;s d'ext&#233;riorisation (projets). Sur le plan &#233;volutif indication de nouveau d&#233;part, de jaillissement, de vie.</p>
+
+<p><strong>Transit 22.</strong> Mitig&#233;. Cette phase concerne plut&#244;t la vie mat&#233;rielle, les capacit&#233;s de construction et les grandes d&#233;cisions. Il faudra &#234;tre circonspect vis-&#224;-vis de son propre jugement et prendre conseil si besoin. M&#233;fiez-vous de l'insouciance, des imprudences ou de l'utopie accompagnant parfois cette vibration. Prenez davantage de recul. Egalement une certaine tension int&#233;rieure, des difficult&#233;s &#224; canaliser les &#233;nergies. Si vous &#233;vitez ces d&#233;rives, ce sera pour vous une bonne p&#233;riode pour r&#233;soudre les probl&#232;mes pratiques difficiles, pour faire des projets, avoir des objectifs ambitieux et b&#233;n&#233;ficier d'inspiration. Mais la plupart des d&#233;cisions ne trouveront leur pleine application que l'ann&#233;e suivante. </p>
+
+<p>Cette ann&#233;e est marqu&#233;e sur le plan physique et mat&#233;riel par la <strong>Lettre de Passage R</strong>. Elle am&#232;ne des difficult&#233;s de toutes sortes (perte, retard, accident, sant&#233; fragilis&#233;e). Instabilit&#233; mat&#233;rielle. D&#233;favorable aux affaires d'argent, mais elle peut amener une certaine renomm&#233;e &#224; travers ce qui est fait pour les autres (altruisme, id&#233;alisme).</p>
+
+<p>Votre plan affectif est pendant cette ann&#233;e influenc&#233; par la <strong>Lettre de Passage E</strong>. Aventures sentimentales heureuses, impulsions sensuelles mais souvent de courte dur&#233;e. Pour les adolescents, il y aura un fort d&#233;sir de libert&#233;, ce qui peut amener des conflits avec les parents. Si la lettre de passage est un &#233; ou un &#234;, alors les changements seront relatifs &#224; un renouveau sentimental.</p>
+
+<p>Votre plan mental ou spirituel est marqu&#233; au cours de cette ann&#233;e par la <strong>Lettre de Passage B</strong>. L'influence de cette vibration est faible mais apporte n&#233;anmoins une certaine s&#233;r&#233;nit&#233; et davantage d'intuition.</p>
+
+<h4>&#192; partir du dimanche 25 ao&#251;t 2013</h4>
+
+<p><strong>Essence 2.</strong> L'accent est mis sur les alliances, les contrats, les amis, le mariage, la vie de couple, les &#233;motions, mais aussi les risques qui s'y rapportent. Si l'Ann&#233;e personnelle est &#233;galement de valeur 2, la double vibration risque d'&#234;tre mal ma&#238;tris&#233;e et il faut s'attendre &#224; des d&#233;ceptions sentimentales ou amicales, une fragilit&#233; &#233;motionnelle et donc une possibilit&#233; de r&#233;percussion sur le corps (nervosit&#233;, angoisses, mauvaise sant&#233;). La pr&#233;sence d'une troisi&#232;me vibration de m&#234;me valeur (au niveau du Cycle ou de l'Apog&#233;e de vie) aura par contre un effet b&#233;n&#233;fique.</p>
+
+<p><strong>Maison 6.</strong> Sur le plan psychologique se rapporte &#224; l'int&#233;riorisation parfois aux angoisses. Sur le plan mat&#233;riel, concerne le quotidien, les responsabilit&#233;s, les contraintes, la sant&#233;, l'agencement du foyer. L'approche du concept de d&#233;vouement peut &#233;voluer pendant cette p&#233;riode</p>
+
+<p>passe avec la</p>
+
+<p><strong>Maison 12.</strong> &#192; priori n&#233;gative. Peut se rapporter &#224; une &#233;preuve avec fuite ou d&#233;passement, &#224; quelque chose d'occulte ou de cach&#233; (infid&#233;lit&#233;, coup bas, ennemis, maladie, h&#244;pital, enfermement). Possible phase de repli sur soi et d'int&#233;riorisation suivie par une recherche d'appui et d'amiti&#233;. Peut s'accompagner d'une certaine &#233;volution personnelle.</p>
+
+<p><strong>Transit 23.</strong> Neutre-positif. Indication de mobilit&#233;, de changements fr&#233;quents ou de nouveaux contacts. De l'&#233;nergie, une force d'action, des appuis importants dans votre entourage ainsi qu'une certaine protection dans vos entreprises. Certainement des nouveaut&#233;s positives sur le plan professionnel. En g&#233;n&#233;ral, les m&#233;rites seront reconnus par l'entourage.</p>
+
+<p>Cette ann&#233;e est marqu&#233;e sur le plan physique et mat&#233;riel par la <strong>Lettre de Passage R</strong>. Elle am&#232;ne des difficult&#233;s de toutes sortes (perte, retard, accident, sant&#233; fragilis&#233;e). Instabilit&#233; mat&#233;rielle. D&#233;favorable aux affaires d'argent, mais elle peut amener une certaine renomm&#233;e &#224; travers ce qui est fait pour les autres (altruisme, id&#233;alisme).</p>
+
+<p>Votre plan affectif est pendant cette ann&#233;e influenc&#233; par la <strong>Lettre de Passage F</strong>. Elle am&#232;ne un besoin de tendresse, d'harmonie, d'&#233;change. Peuvent &#233;ventuellement appara&#238;tre : des probl&#232;mes affectifs au sein de la famille ou la prise de responsabilit&#233;s familiales (mariage par exemple ou obligations non d&#233;sir&#233;es).</p>
+
+<p>Votre plan mental ou spirituel est marqu&#233; au cours de cette ann&#233;e par la <strong>Lettre de Passage E</strong>. Habilit&#233;, cr&#233;ativit&#233;, curiosit&#233;, &#233;veil. De nouvelles exp&#233;riences qui peuvent &#234;tre enrichissantes. Si la lettre de passage est un &#233; ou un &#234;, alors les changements seront relatifs &#224; un renouveau dans votre confiance, votre inspiration, vos id&#233;es.</p>
+
+<h2>avril 2013<!-- Yves Pflieger YvesPflieger--><a id="Mois04"></a></h2>
+
+<h3>Travail</h3>
+
+<p>Un mois cr&#233;atif et en pleine expansion. Initiatives heureuses et davantage d'envergure professionnelle. La seconde semaine est particuli&#232;rement favorable. Relations professionnelles favoris&#233;es, &#233;changes actifs et les liens nou&#233;s durablement. Profitez-en !</p>
+
+<h3>Amour</h3>
+
+<p>Le contexte se pr&#234;te volontiers &#224; davantage de complicit&#233; au sein du couple. Apportez une touche de fantaisie, &#233;vadez-vous ensemble. Des petits d&#233;tails, quelques attentions suffiront &#224; am&#233;liorer votre qualit&#233; de vie. Les c&#233;libataires, tr&#232;s &#224; l'aise, auront l'occasion de nouer une nouvelle relation &#224; partir du 21. Il faudra accepter de changer ses petites habitudes.</p>
+
+<h3>Sant&#233;</h3>
+
+<p>Dans le cadre d'un &#233;tat de sant&#233; normal, l'environnement vibratoire de ce mois laisse augurer une grande vitalit&#233;. Si vous &#234;tes sportif, profitez-en. La seule p&#233;riode d&#233;licate se situe en troisi&#232;me semaine si l'on commet des exc&#232;s sportifs.</p>
+
+<h3>Finances</h3>
+
+<p>Une sorte d'ivresse risque de s'emparer de votre esprit ce mois-ci. Les id&#233;es sont sans doute int&#233;ressantes mais encore pr&#233;matur&#233;es. De plus, vous avez tendance &#224; largement sous-estimer les co&#251;ts et le temps &#224; investir. Laissez m&#251;rir le projet et abstenez-vous d'agir pour l'instant. Si vous n'arrivez pas &#224; vous refr&#233;ner alors faites les choses &#224; petite &#233;chelle. Restez sur vos gardes et &#233;vitez de vous endetter d'une mani&#232;re ou d'une autre.</p>
+
+<h4>lundi 1 avril 2013 8/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Ce matin, vous aurez un punch extraordinaire. Vous serez tent&#233;e de prendre des initiatives inhabituelles voire os&#233;es. Avec ce dynamisme et votre assurance vous serez en mesure d'entreprendre des d&#233;marches, prendre des d&#233;cisions. Tr&#232;s ma&#238;tre de vous-m&#234;me, vous aborderez les situations tr&#232;s directement. Vous serez m&#234;me tent&#233;e de d&#233;noncer les injustices. &#192; partir de midi, le cycle change et il serait sage de ne pas prendre de d&#233;cisions importantes. Il y aura des contrari&#233;t&#233;s que vous ne surmonterez qu'apr&#232;s de nombreux efforts en fin d'apr&#232;s-midi. La soir&#233;e sera &#224; nouveau positive.</p>
+
+<h4>mardi 2 avril 2013 9/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Vous allez rentrer dans un cycle tr&#232;s d&#233;licat aujourd'hui. Terrain min&#233;, propositions douteuses, promesses non tenues et contretemps. Vos d&#233;marches professionnelles ou d'ordre affectif n'aboutiront pas. Insatisfaction. Attendez-vous plus que de coutume &#224; des manifestations de froideur et m&#234;me &#224; une volont&#233; de nuire. D&#233;tournez-vous subtilement du mal et concentrez-vous plut&#244;t sur des activit&#233;s utiles ou en rapport avec la r&#233;flexion, la m&#233;ditation ou la lecture. La soir&#233;e sera domin&#233;e par des vibrations plus neutres. Une certaine fragilit&#233; &#233;motionnelle peut subsister apr&#232;s cette journ&#233;e difficile.</p>
+
+<h4>mercredi 3 avril 2013 1/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e heureuse o&#249; vous b&#233;n&#233;ficierez d'excellentes vibrations pour tout ce qui est li&#233; au plan mat&#233;riel et financier. Profitez-en pour n&#233;gocier, marchander, sp&#233;culer, investir ou solliciter un pr&#234;t. Effet positif &#233;galement sur votre sens relationnel. On vous appr&#233;ciera. En soir&#233;e, le climat vibratoire change et c'est &#224; votre tour de vous montrer conciliant et attentif aux autres.</p>
+
+<h4>jeudi 4 avril 2013 2/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Aujourd'hui vous b&#233;n&#233;ficierez d'un excellent contexte vibratoire. Vos id&#233;es seront bonnes et votre rayonnement ou ascendant efficace. Profitez-en pour avancer. Osez ! Donnez des conseils, marquez des points, concr&#233;tisez. D&#232;s l'apr&#232;s-midi le climat devient favorable aux relations affectives, aux sentiments amoureux, aux plaisirs. Finalement, seul un &#233;v&#232;nement f&#226;cheux et perturbant serait capable de ternir cette bonne journ&#233;e.</p>
+
+<h4>vendredi 5 avril 2013 3/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Gaiet&#233; et vivacit&#233; vous accompagneront d&#232;s le r&#233;veil. Un certain flou et un ralentissement impr&#232;gnent le d&#233;but d'apr&#232;s-midi. Tout s'arrange ensuite pour aboutir &#224; une fin d'apr&#232;s-midi est assez exceptionnelle : imagination, &#233;nergie et rayonnement personnel. T&#226;chez de g&#233;rer au mieux votre emploi du temps pour tirer parti de cette vibration si favorable qui se r&#233;p&#233;tera ce mois-ci.</p>
+
+<h4>samedi 6 avril 2013 4/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Les vibrations de ce jour vous inciteront &#224; prendre en consid&#233;ration chaque d&#233;tail. Vous sentirez de fa&#231;on accrue que les oublis, la n&#233;gligence engendreront des probl&#232;mes. Vous comprendrez que m&#234;me les choses &#233;videntes ne se r&#233;solvent pas d'elles-m&#234;mes. Il faudra &#234;tre ordonn&#233;e et consciencieuse. Le contexte vibratoire de cette matin&#233;e d&#233;favorise les tentatives de coop&#233;ration. N'attendez rien des autres ce matin. L'apr&#232;s-midi se placera dans un cycle plus constructif. Ce sera une bonne p&#233;riode pour entreprendre et intervenir pour votre avenir. Nouveau cycle n&#233;gatif en soir&#233;e surtout sur le plan relationnel. Mieux vaut rester courtois et se tenir en retrait.</p>
+
+<h4>dimanche 7 avril 2013 5/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Journ&#233;e tr&#232;s favorable. On aimerait vivre &#231;a plus souvent ! Un bel enthousiasme, une certaine r&#233;ussite, le don de persuasion. Pour ainsi dire, toutes vos actions seront fructueuses. Les choses se d&#233;rouleront avec une facilit&#233; d&#233;concertante. Tout les domaines seront impr&#233;gn&#233;s de cette magie, particuli&#232;rement celui de l'amiti&#233; et de l'affectif. Vous aurez envie de plaire, de charmer. Profitez de cette journ&#233;e pour marquer des points et parfaire votre image sociale. Seul un &#233;v&#232;nement f&#226;cheux et perturbant serait capable de ternir cette bonne journ&#233;e.</p>
+
+<h4>lundi 8 avril 2013 6/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Profitez sans tarder de cette matin&#233;e tr&#232;s favorable pour vos activit&#233;s professionnelles. Si vous avez besoin d'appuis pour r&#233;aliser vos projets n'h&#233;sitez pas &#224; demander l'aide de personnes influentes. Leur r&#233;action sera certainement positive. Les vibrations de l'apr&#232;s-midi et de la soir&#233;e influeront quelque peu votre humeur. Vous serez sans doute moins concentr&#233;e sur votre travail et bien plus int&#233;ress&#233;e par l'aspect affectif. Si vous avez d&#233;j&#224; quelqu'un, vous vivrez des moments de bonheur. Sinon vous avez tout int&#233;r&#234;t &#224; accepter les invitations ou les sorties.</p>
+
+<h4>mardi 9 avril 2013 7/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+</tr></table>
+<p>L'intuition et l'analyse seront &#224; l'honneur aujourd'hui. Si vous vous posez des questions sur la vie, sur votre strat&#233;gie, vous aurez sans doute des r&#233;ponses. Votre clairvoyance et esprit de synth&#232;se seront performants. Vous g&#233;rerez mieux vos responsabilit&#233;s et pourrez pr&#233;parer votre avenir. Une journ&#233;e tr&#232;s favorable &#224; votre &#233;panouissement. &#201;vitez toutefois de trop vous engager pour finir par vous &#233;parpiller. Laissez plut&#244;t venir les choses &#224; vous et concentrez-vous sur ce qui est important. Ce bon contexte ne s'applique pas cependant aux finances. N'investissez pas, tenez-vous en retrait.</p>
+
+<h4>mercredi 10 avril 2013 8/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Ce matin, vous aurez un punch extraordinaire. Vous serez tent&#233;e de prendre des initiatives inhabituelles voire os&#233;es. Avec ce dynamisme et votre assurance vous serez en mesure d'entreprendre des d&#233;marches, prendre des d&#233;cisions. Tr&#232;s ma&#238;tre de vous-m&#234;me, vous aborderez les situations tr&#232;s directement. Vous serez m&#234;me tent&#233;e de d&#233;noncer les injustices. &#192; partir de midi, le cycle change et il serait sage de ne pas prendre de d&#233;cisions importantes. Il y aura des contrari&#233;t&#233;s que vous ne surmonterez qu'apr&#232;s de nombreux efforts en fin d'apr&#232;s-midi. La soir&#233;e sera &#224; nouveau positive.</p>
+
+<h4>jeudi 11 avril 2013 9/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Vous allez rentrer dans un cycle tr&#232;s d&#233;licat aujourd'hui. Terrain min&#233;, propositions douteuses, promesses non tenues et contretemps. Vos d&#233;marches professionnelles ou d'ordre affectif n'aboutiront pas. Insatisfaction. Attendez-vous plus que de coutume &#224; des manifestations de froideur et m&#234;me &#224; une volont&#233; de nuire. D&#233;tournez-vous subtilement du mal et concentrez-vous plut&#244;t sur des activit&#233;s utiles ou en rapport avec la r&#233;flexion, la m&#233;ditation ou la lecture. La soir&#233;e sera domin&#233;e par des vibrations plus neutres. Une certaine fragilit&#233; &#233;motionnelle peut subsister apr&#232;s cette journ&#233;e difficile.</p>
+
+<h4>vendredi 12 avril 2013 1/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e heureuse o&#249; vous b&#233;n&#233;ficierez d'excellentes vibrations pour tout ce qui est li&#233; au plan mat&#233;riel et financier. Profitez-en pour n&#233;gocier, marchander, sp&#233;culer, investir ou solliciter un pr&#234;t. Effet positif &#233;galement sur votre sens relationnel. On vous appr&#233;ciera. En soir&#233;e, le climat vibratoire change et c'est &#224; votre tour de vous montrer conciliant et attentif aux autres.</p>
+
+<h4>samedi 13 avril 2013 2/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Aujourd'hui vous b&#233;n&#233;ficierez d'un excellent contexte vibratoire. Vos id&#233;es seront bonnes et votre rayonnement ou ascendant efficace. Profitez-en pour avancer. Osez ! Donnez des conseils, marquez des points, concr&#233;tisez. D&#232;s l'apr&#232;s-midi le climat devient favorable aux relations affectives, aux sentiments amoureux, aux plaisirs. Finalement, seul un &#233;v&#232;nement f&#226;cheux et perturbant serait capable de ternir cette bonne journ&#233;e.</p>
+
+<h4>dimanche 14 avril 2013 3/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Gaiet&#233; et vivacit&#233; vous accompagneront d&#232;s le r&#233;veil. Un certain flou et un ralentissement impr&#232;gnent le d&#233;but d'apr&#232;s-midi. Tout s'arrange ensuite pour aboutir &#224; une fin d'apr&#232;s-midi est assez exceptionnelle : imagination, &#233;nergie et rayonnement personnel. T&#226;chez de g&#233;rer au mieux votre emploi du temps pour tirer parti de cette vibration si favorable qui se r&#233;p&#233;tera ce mois-ci.</p>
+
+<h4>lundi 15 avril 2013 4/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Les vibrations de ce jour vous inciteront &#224; prendre en consid&#233;ration chaque d&#233;tail. Vous sentirez de fa&#231;on accrue que les oublis, la n&#233;gligence engendreront des probl&#232;mes. Vous comprendrez que m&#234;me les choses &#233;videntes ne se r&#233;solvent pas d'elles-m&#234;mes. Il faudra &#234;tre ordonn&#233;e et consciencieuse. Le contexte vibratoire de cette matin&#233;e d&#233;favorise les tentatives de coop&#233;ration. N'attendez rien des autres ce matin. L'apr&#232;s-midi se placera dans un cycle plus constructif. Ce sera une bonne p&#233;riode pour entreprendre et intervenir pour votre avenir. Nouveau cycle n&#233;gatif en soir&#233;e surtout sur le plan relationnel. Mieux vaut rester courtois et se tenir en retrait.</p>
+
+<h4>mardi 16 avril 2013 5/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Journ&#233;e tr&#232;s favorable. On aimerait vivre &#231;a plus souvent ! Un bel enthousiasme, une certaine r&#233;ussite, le don de persuasion. Pour ainsi dire, toutes vos actions seront fructueuses. Les choses se d&#233;rouleront avec une facilit&#233; d&#233;concertante. Tout les domaines seront impr&#233;gn&#233;s de cette magie, particuli&#232;rement celui de l'amiti&#233; et de l'affectif. Vous aurez envie de plaire, de charmer. Profitez de cette journ&#233;e pour marquer des points et parfaire votre image sociale. Seul un &#233;v&#232;nement f&#226;cheux et perturbant serait capable de ternir cette bonne journ&#233;e.</p>
+
+<h4>mercredi 17 avril 2013 6/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Profitez sans tarder de cette matin&#233;e tr&#232;s favorable pour vos activit&#233;s professionnelles. Si vous avez besoin d'appuis pour r&#233;aliser vos projets n'h&#233;sitez pas &#224; demander l'aide de personnes influentes. Leur r&#233;action sera certainement positive. Les vibrations de l'apr&#232;s-midi et de la soir&#233;e influeront quelque peu votre humeur. Vous serez sans doute moins concentr&#233;e sur votre travail et bien plus int&#233;ress&#233;e par l'aspect affectif. Si vous avez d&#233;j&#224; quelqu'un, vous vivrez des moments de bonheur. Sinon vous avez tout int&#233;r&#234;t &#224; accepter les invitations ou les sorties.</p>
+
+<h4>jeudi 18 avril 2013 7/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+</tr></table>
+<p>L'intuition et l'analyse seront &#224; l'honneur aujourd'hui. Si vous vous posez des questions sur la vie, sur votre strat&#233;gie, vous aurez sans doute des r&#233;ponses. Votre clairvoyance et esprit de synth&#232;se seront performants. Vous g&#233;rerez mieux vos responsabilit&#233;s et pourrez pr&#233;parer votre avenir. Une journ&#233;e tr&#232;s favorable &#224; votre &#233;panouissement. &#201;vitez toutefois de trop vous engager pour finir par vous &#233;parpiller. Laissez plut&#244;t venir les choses &#224; vous et concentrez-vous sur ce qui est important. Ce bon contexte ne s'applique pas cependant aux finances. N'investissez pas, tenez-vous en retrait.</p>
+
+<h4>vendredi 19 avril 2013 8/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Ce matin, vous aurez un punch extraordinaire. Vous serez tent&#233;e de prendre des initiatives inhabituelles voire os&#233;es. Avec ce dynamisme et votre assurance vous serez en mesure d'entreprendre des d&#233;marches, prendre des d&#233;cisions. Tr&#232;s ma&#238;tre de vous-m&#234;me, vous aborderez les situations tr&#232;s directement. Vous serez m&#234;me tent&#233;e de d&#233;noncer les injustices. &#192; partir de midi, le cycle change et il serait sage de ne pas prendre de d&#233;cisions importantes. Il y aura des contrari&#233;t&#233;s que vous ne surmonterez qu'apr&#232;s de nombreux efforts en fin d'apr&#232;s-midi. La soir&#233;e sera &#224; nouveau positive.</p>
+
+<h4>samedi 20 avril 2013 9/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Vous allez rentrer dans un cycle tr&#232;s d&#233;licat aujourd'hui. Terrain min&#233;, propositions douteuses, promesses non tenues et contretemps. Vos d&#233;marches professionnelles ou d'ordre affectif n'aboutiront pas. Insatisfaction. Attendez-vous plus que de coutume &#224; des manifestations de froideur et m&#234;me &#224; une volont&#233; de nuire. D&#233;tournez-vous subtilement du mal et concentrez-vous plut&#244;t sur des activit&#233;s utiles ou en rapport avec la r&#233;flexion, la m&#233;ditation ou la lecture. La soir&#233;e sera domin&#233;e par des vibrations plus neutres. Une certaine fragilit&#233; &#233;motionnelle peut subsister apr&#232;s cette journ&#233;e difficile.</p>
+
+<h4>dimanche 21 avril 2013 1/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e heureuse o&#249; vous b&#233;n&#233;ficierez d'excellentes vibrations pour tout ce qui est li&#233; au plan mat&#233;riel et financier. Profitez-en pour n&#233;gocier, marchander, sp&#233;culer, investir ou solliciter un pr&#234;t. Effet positif &#233;galement sur votre sens relationnel. On vous appr&#233;ciera. En soir&#233;e, le climat vibratoire change et c'est &#224; votre tour de vous montrer conciliant et attentif aux autres.</p>
+
+<h4>lundi 22 avril 2013 2/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Aujourd'hui vous b&#233;n&#233;ficierez d'un excellent contexte vibratoire. Vos id&#233;es seront bonnes et votre rayonnement ou ascendant efficace. Profitez-en pour avancer. Osez ! Donnez des conseils, marquez des points, concr&#233;tisez. D&#232;s l'apr&#232;s-midi le climat devient favorable aux relations affectives, aux sentiments amoureux, aux plaisirs. Finalement, seul un &#233;v&#232;nement f&#226;cheux et perturbant serait capable de ternir cette bonne journ&#233;e.</p>
+
+<h4>mardi 23 avril 2013 3/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Gaiet&#233; et vivacit&#233; vous accompagneront d&#232;s le r&#233;veil. Un certain flou et un ralentissement impr&#232;gnent le d&#233;but d'apr&#232;s-midi. Tout s'arrange ensuite pour aboutir &#224; une fin d'apr&#232;s-midi est assez exceptionnelle : imagination, &#233;nergie et rayonnement personnel. T&#226;chez de g&#233;rer au mieux votre emploi du temps pour tirer parti de cette vibration si favorable qui se r&#233;p&#233;tera ce mois-ci.</p>
+
+<h4>mercredi 24 avril 2013 4/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Les vibrations de ce jour vous inciteront &#224; prendre en consid&#233;ration chaque d&#233;tail. Vous sentirez de fa&#231;on accrue que les oublis, la n&#233;gligence engendreront des probl&#232;mes. Vous comprendrez que m&#234;me les choses &#233;videntes ne se r&#233;solvent pas d'elles-m&#234;mes. Il faudra &#234;tre ordonn&#233;e et consciencieuse. Le contexte vibratoire de cette matin&#233;e d&#233;favorise les tentatives de coop&#233;ration. N'attendez rien des autres ce matin. L'apr&#232;s-midi se placera dans un cycle plus constructif. Ce sera une bonne p&#233;riode pour entreprendre et intervenir pour votre avenir. Nouveau cycle n&#233;gatif en soir&#233;e surtout sur le plan relationnel. Mieux vaut rester courtois et se tenir en retrait.</p>
+
+<h4>jeudi 25 avril 2013 5/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Journ&#233;e tr&#232;s favorable. On aimerait vivre &#231;a plus souvent ! Un bel enthousiasme, une certaine r&#233;ussite, le don de persuasion. Pour ainsi dire, toutes vos actions seront fructueuses. Les choses se d&#233;rouleront avec une facilit&#233; d&#233;concertante. Tout les domaines seront impr&#233;gn&#233;s de cette magie, particuli&#232;rement celui de l'amiti&#233; et de l'affectif. Vous aurez envie de plaire, de charmer. Profitez de cette journ&#233;e pour marquer des points et parfaire votre image sociale. Seul un &#233;v&#232;nement f&#226;cheux et perturbant serait capable de ternir cette bonne journ&#233;e.</p>
+
+<h4>vendredi 26 avril 2013 6/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Profitez sans tarder de cette matin&#233;e tr&#232;s favorable pour vos activit&#233;s professionnelles. Si vous avez besoin d'appuis pour r&#233;aliser vos projets n'h&#233;sitez pas &#224; demander l'aide de personnes influentes. Leur r&#233;action sera certainement positive. Les vibrations de l'apr&#232;s-midi et de la soir&#233;e influeront quelque peu votre humeur. Vous serez sans doute moins concentr&#233;e sur votre travail et bien plus int&#233;ress&#233;e par l'aspect affectif. Si vous avez d&#233;j&#224; quelqu'un, vous vivrez des moments de bonheur. Sinon vous avez tout int&#233;r&#234;t &#224; accepter les invitations ou les sorties.</p>
+
+<h4>samedi 27 avril 2013 7/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+</tr></table>
+<p>L'intuition et l'analyse seront &#224; l'honneur aujourd'hui. Si vous vous posez des questions sur la vie, sur votre strat&#233;gie, vous aurez sans doute des r&#233;ponses. Votre clairvoyance et esprit de synth&#232;se seront performants. Vous g&#233;rerez mieux vos responsabilit&#233;s et pourrez pr&#233;parer votre avenir. Une journ&#233;e tr&#232;s favorable &#224; votre &#233;panouissement. &#201;vitez toutefois de trop vous engager pour finir par vous &#233;parpiller. Laissez plut&#244;t venir les choses &#224; vous et concentrez-vous sur ce qui est important. Ce bon contexte ne s'applique pas cependant aux finances. N'investissez pas, tenez-vous en retrait.</p>
+
+<h4>dimanche 28 avril 2013 8/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Ce matin, vous aurez un punch extraordinaire. Vous serez tent&#233;e de prendre des initiatives inhabituelles voire os&#233;es. Avec ce dynamisme et votre assurance vous serez en mesure d'entreprendre des d&#233;marches, prendre des d&#233;cisions. Tr&#232;s ma&#238;tre de vous-m&#234;me, vous aborderez les situations tr&#232;s directement. Vous serez m&#234;me tent&#233;e de d&#233;noncer les injustices. &#192; partir de midi, le cycle change et il serait sage de ne pas prendre de d&#233;cisions importantes. Il y aura des contrari&#233;t&#233;s que vous ne surmonterez qu'apr&#232;s de nombreux efforts en fin d'apr&#232;s-midi. La soir&#233;e sera &#224; nouveau positive.</p>
+
+<h4>lundi 29 avril 2013 9/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Vous allez rentrer dans un cycle tr&#232;s d&#233;licat aujourd'hui. Terrain min&#233;, propositions douteuses, promesses non tenues et contretemps. Vos d&#233;marches professionnelles ou d'ordre affectif n'aboutiront pas. Insatisfaction. Attendez-vous plus que de coutume &#224; des manifestations de froideur et m&#234;me &#224; une volont&#233; de nuire. D&#233;tournez-vous subtilement du mal et concentrez-vous plut&#244;t sur des activit&#233;s utiles ou en rapport avec la r&#233;flexion, la m&#233;ditation ou la lecture. La soir&#233;e sera domin&#233;e par des vibrations plus neutres. Une certaine fragilit&#233; &#233;motionnelle peut subsister apr&#232;s cette journ&#233;e difficile.</p>
+
+<h4>mardi 30 avril 2013 1/7</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e heureuse o&#249; vous b&#233;n&#233;ficierez d'excellentes vibrations pour tout ce qui est li&#233; au plan mat&#233;riel et financier. Profitez-en pour n&#233;gocier, marchander, sp&#233;culer, investir ou solliciter un pr&#234;t. Effet positif &#233;galement sur votre sens relationnel. On vous appr&#233;ciera. En soir&#233;e, le climat vibratoire change et c'est &#224; votre tour de vous montrer conciliant et attentif aux autres.</p>
+
+<h2>mai 2013<!-- Yves Pflieger YvesPflieger--><a id="Mois05"></a></h2>
+
+<h3>Travail</h3>
+
+<p>Une premi&#232;re quinzaine excellente mais &#233;galement d&#233;terminante pour la suite de ce mois. Vous serez probablement amen&#233;e &#224; recevoir de nouvelles responsabilit&#233;s, &#224; nouer des contacts avec des gens int&#233;ressants. On vous appr&#233;ciera. Mieux vaut tirer parti de cette bonne configuration car elle ne durera pas longtemps. La seconde quinzaine risque d'&#234;tre un peu d&#233;cevante.</p>
+
+<h3>Amour</h3>
+
+<p>Une premi&#232;re quinzaine sereine que seul un important et f&#226;cheux bouleversement pourrait &#233;ventuellement venir ternir. On vous appr&#233;ciera ! La derni&#232;re partie du mois sera un peu moins agr&#233;able.</p>
+
+<h3>Sant&#233;</h3>
+
+<p>Dans le cadre d'un &#233;tat de sant&#233; normal, l'environnement vibratoire de ce mois favorisera le tonus. Cette forme optimale faiblira un peu vers la fin du mois.</p>
+
+<h3>Finances</h3>
+
+<p>Vous allez probablement recevoir des offres int&#233;ressantes, &#233;manant d'amis le plus souvent. Si rien d'int&#233;ressant ne s'est pr&#233;sent&#233; &#224; vous durant la 1&#232;re quinzaine alors attendez le mois prochain car les aspects vibratoires se d&#233;t&#233;riorent au-del&#224; du 15. Mieux vaut s'abstenir avec l'argent. Attention aux pertes.</p>
+
+<h4>mercredi 1 mai 2013 9/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e relativement &#233;prouvante, &#233;maill&#233;e de luttes, d'efforts mais heureusement aussi d'appuis providentiels qui vous aideront &#224; vous sortir de cette confusion sans perdre votre dignit&#233;. Soulag&#233;e, vous pourrez alors aborder la soir&#233;e avec un bon &#233;tat d'esprit. Il est m&#234;me possible que vous vous sentiez particuli&#232;rement satisfaite et rayonnante au cours d'une soir&#233;e faisant part belle &#224; l'amiti&#233;. Votre entourage sera inconsciemment attir&#233; par votre bien-&#234;tre et cela vous fera tr&#232;s plaisir.</p>
+
+<h4>jeudi 2 mai 2013 1/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e plut&#244;t positive que seul un &#233;v&#232;nement f&#226;cheux pourrait g&#226;cher. Vous vous sentirez beaucoup plus confiante et mature qu'&#224; l'accoutum&#233;e. On vous &#233;coutera, on vous respectera davantage. Si vous avez l'habitude d'h&#233;siter, de ne pas oser suffisamment, le moment est venu de laisser tout &#231;a derri&#232;re vous. "Demandez et vous recevrez". Il est imp&#233;ratif d'en profiter d&#232;s le matin ou en soir&#233;e car l'apr&#232;s-midi est un peu moins favorable.</p>
+
+<h4>vendredi 3 mai 2013 2/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une matin&#233;e d&#233;licate en perspective ! Choix &#224; faire n&#233;cessitant discernement et actions efficaces. Pas question de tout reporter. Posez bien les probl&#232;mes, cela vous aidera &#224; agir avec lucidit&#233;. L'apr&#232;s-midi sera diff&#233;rente et tr&#232;s favorable aux amiti&#233;s, aux d&#233;marches, &#224; la diplomatie. Si vous avez l'esprit tranquille apr&#232;s avoir pris les d&#233;cisions qui s'imposaient ce matin, vous r&#233;ussirez bien votre apr&#232;s-midi. Pendant la soir&#233;e votre int&#233;r&#234;t ira davantage aux bons moments de la vie.</p>
+
+<h4>samedi 4 mai 2013 3/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Superbe contexte vibratoire que seul un &#233;v&#232;nement vraiment f&#226;cheux serait capable de g&#226;cher. Calez-vous sur cette onde et vous aurez la "baraka". Mettez votre conviction dans toutes vos entreprises et vous ne serez pas d&#233;&#231;ue. Les perspectives financi&#232;res et relationnelles seront &#233;galement bonnes aujourd'hui. Profitez-en pour conqu&#233;rir, faire avancer vos affaires. La journ&#233;e s'ach&#232;vera par une soir&#233;e tr&#232;s favorable aux invitations, aux discussions enrichissantes, &#224; la r&#233;flexion, &#224; l'amiti&#233;.</p>
+
+<h4>dimanche 5 mai 2013 4/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Le contexte vibratoire favorise l'organisation, l'ordre, le travail. Concentrez-vous sur ces t&#226;ches simples toute la journ&#233;e. M&#233;fiez-vous de votre &#233;motionnel, assez instable aujourd'hui. Si vous n'y prenez garde, vous risquez de changer d'avis, d'&#234;tre trop admiratif ou trop critique. Prudence. En soir&#233;e, le cycle sera favorable &#224; votre bien-&#234;tre spirituel et physique. D&#233;tendez-vous, faites du sport, prenez de la hauteur.</p>
+
+<h4>lundi 6 mai 2013 5/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>La matin&#233;e risque de ne pas se d&#233;rouler comme vous l'attendiez. Mais ne soyez pas d&#233;&#231;ue car tout s'arrangera au cours d'une apr&#232;s-midi assez fructueuse et parfois inattendue. Ayez l'esprit souple pour en tirer parti. Profitez de ce cycle positif pour communiquer, entreprendre, n&#233;gocier, solliciter des appuis. Sur votre &#233;lan vous aborderez la soir&#233;e avec une envie de luxe, de bien-&#234;tre, d'ambiance sympathique, de sortie r&#233;ussie. Probabilit&#233; accrue de faire de nouvelles connaissances.</p>
+
+<h4>mardi 7 mai 2013 6/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+</tr></table>
+<p>Une journ&#233;e difficile. Nombreux obstacles et difficult&#233;s de communication avec vos interlocuteurs. Soyez patiente, diplomate. &#201;tablissez les bases d'un dialogue constructif sans incompr&#233;hension. Il y aura aussi des responsabilit&#233;s et des obligations &#224; assumer. Ne vous laissez pas impressionner par toutes ces charges. Agissez avec d&#233;termination et efficacit&#233;. Si tout se passe bien, vous aborderez la soir&#233;e avec s&#233;r&#233;nit&#233; et vous pourrez vous consacrer &#224; vos proches ou amis dans une ambiance agr&#233;able et authentique.</p>
+
+<h4>mercredi 8 mai 2013 7/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+</tr></table>
+<p>Une journ&#233;e d&#233;licate ne favorisant gu&#232;re les actions, les d&#233;marches, l'ardeur. N'essayez pas de provoquer les &#233;v&#232;nements. Jouez plut&#244;t &#224; l'aimant et laissez venir les choses &#224; vous. Si vous savez rester patiente et confiante, la providence vous aidera sans doute. Si au contraire, vous cherchez &#224; forcer, si vous doutez ou si vous entretenez du ressentiment, il est probable que les choses tourneront mal. Prenez du recul, surveillez votre axe et ne vous impatientez pas. Toute autre ambiance en soir&#233;e, favorisant la communication, les relations, l'altruisme.</p>
+
+<h4>jeudi 9 mai 2013 8/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Les conditions seront aujourd'hui particuli&#232;rement exigeantes. Nonchalance, passivit&#233;, n&#233;gligence et manque de consistance seront vite sanctionn&#233;s ! Il faudra &#234;tre vigilante, intuitive, faire preuve de pr&#233;cision mais aussi de courage, de combativit&#233; et d'intelligence. Les r&#233;sultats de cette journ&#233;e seront &#224; la hauteur de vos efforts, de votre envie de garder la ma&#238;trise des &#233;v&#232;nements, de votre capacit&#233; &#224; ne pas perdre de vue ce qui est important pour vous. Les contretemps s'att&#233;nueront en fin d'apr&#232;s-midi mais l'ambiance de la soir&#233;e restera encore un peu &#233;lectrique.</p>
+
+<h4>vendredi 10 mai 2013 9/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e relativement &#233;prouvante, &#233;maill&#233;e de luttes, d'efforts mais heureusement aussi d'appuis providentiels qui vous aideront &#224; vous sortir de cette confusion sans perdre votre dignit&#233;. Soulag&#233;e, vous pourrez alors aborder la soir&#233;e avec un bon &#233;tat d'esprit. Il est m&#234;me possible que vous vous sentiez particuli&#232;rement satisfaite et rayonnante au cours d'une soir&#233;e faisant part belle &#224; l'amiti&#233;. Votre entourage sera inconsciemment attir&#233; par votre bien-&#234;tre et cela vous fera tr&#232;s plaisir.</p>
+
+<h4>samedi 11 mai 2013 1/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e plut&#244;t positive que seul un &#233;v&#232;nement f&#226;cheux pourrait g&#226;cher. Vous vous sentirez beaucoup plus confiante et mature qu'&#224; l'accoutum&#233;e. On vous &#233;coutera, on vous respectera davantage. Si vous avez l'habitude d'h&#233;siter, de ne pas oser suffisamment, le moment est venu de laisser tout &#231;a derri&#232;re vous. "Demandez et vous recevrez". Il est imp&#233;ratif d'en profiter d&#232;s le matin ou en soir&#233;e car l'apr&#232;s-midi est un peu moins favorable.</p>
+
+<h4>dimanche 12 mai 2013 2/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une matin&#233;e d&#233;licate en perspective ! Choix &#224; faire n&#233;cessitant discernement et actions efficaces. Pas question de tout reporter. Posez bien les probl&#232;mes, cela vous aidera &#224; agir avec lucidit&#233;. L'apr&#232;s-midi sera diff&#233;rente et tr&#232;s favorable aux amiti&#233;s, aux d&#233;marches, &#224; la diplomatie. Si vous avez l'esprit tranquille apr&#232;s avoir pris les d&#233;cisions qui s'imposaient ce matin, vous r&#233;ussirez bien votre apr&#232;s-midi. Pendant la soir&#233;e votre int&#233;r&#234;t ira davantage aux bons moments de la vie.</p>
+
+<h4>lundi 13 mai 2013 3/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Superbe contexte vibratoire que seul un &#233;v&#232;nement vraiment f&#226;cheux serait capable de g&#226;cher. Calez-vous sur cette onde et vous aurez la "baraka". Mettez votre conviction dans toutes vos entreprises et vous ne serez pas d&#233;&#231;ue. Les perspectives financi&#232;res et relationnelles seront &#233;galement bonnes aujourd'hui. Profitez-en pour conqu&#233;rir, faire avancer vos affaires. La journ&#233;e s'ach&#232;vera par une soir&#233;e tr&#232;s favorable aux invitations, aux discussions enrichissantes, &#224; la r&#233;flexion, &#224; l'amiti&#233;.</p>
+
+<h4>mardi 14 mai 2013 4/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Le contexte vibratoire favorise l'organisation, l'ordre, le travail. Concentrez-vous sur ces t&#226;ches simples toute la journ&#233;e. M&#233;fiez-vous de votre &#233;motionnel, assez instable aujourd'hui. Si vous n'y prenez garde, vous risquez de changer d'avis, d'&#234;tre trop admiratif ou trop critique. Prudence. En soir&#233;e, le cycle sera favorable &#224; votre bien-&#234;tre spirituel et physique. D&#233;tendez-vous, faites du sport, prenez de la hauteur.</p>
+
+<h4>mercredi 15 mai 2013 5/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>La matin&#233;e risque de ne pas se d&#233;rouler comme vous l'attendiez. Mais ne soyez pas d&#233;&#231;ue car tout s'arrangera au cours d'une apr&#232;s-midi assez fructueuse et parfois inattendue. Ayez l'esprit souple pour en tirer parti. Profitez de ce cycle positif pour communiquer, entreprendre, n&#233;gocier, solliciter des appuis. Sur votre &#233;lan vous aborderez la soir&#233;e avec une envie de luxe, de bien-&#234;tre, d'ambiance sympathique, de sortie r&#233;ussie. Probabilit&#233; accrue de faire de nouvelles connaissances.</p>
+
+<h4>jeudi 16 mai 2013 6/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+</tr></table>
+<p>Une journ&#233;e difficile. Nombreux obstacles et difficult&#233;s de communication avec vos interlocuteurs. Soyez patiente, diplomate. &#201;tablissez les bases d'un dialogue constructif sans incompr&#233;hension. Il y aura aussi des responsabilit&#233;s et des obligations &#224; assumer. Ne vous laissez pas impressionner par toutes ces charges. Agissez avec d&#233;termination et efficacit&#233;. Si tout se passe bien, vous aborderez la soir&#233;e avec s&#233;r&#233;nit&#233; et vous pourrez vous consacrer &#224; vos proches ou amis dans une ambiance agr&#233;able et authentique.</p>
+
+<h4>vendredi 17 mai 2013 7/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+</tr></table>
+<p>Une journ&#233;e d&#233;licate ne favorisant gu&#232;re les actions, les d&#233;marches, l'ardeur. N'essayez pas de provoquer les &#233;v&#232;nements. Jouez plut&#244;t &#224; l'aimant et laissez venir les choses &#224; vous. Si vous savez rester patiente et confiante, la providence vous aidera sans doute. Si au contraire, vous cherchez &#224; forcer, si vous doutez ou si vous entretenez du ressentiment, il est probable que les choses tourneront mal. Prenez du recul, surveillez votre axe et ne vous impatientez pas. Toute autre ambiance en soir&#233;e, favorisant la communication, les relations, l'altruisme.</p>
+
+<h4>samedi 18 mai 2013 8/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Les conditions seront aujourd'hui particuli&#232;rement exigeantes. Nonchalance, passivit&#233;, n&#233;gligence et manque de consistance seront vite sanctionn&#233;s ! Il faudra &#234;tre vigilante, intuitive, faire preuve de pr&#233;cision mais aussi de courage, de combativit&#233; et d'intelligence. Les r&#233;sultats de cette journ&#233;e seront &#224; la hauteur de vos efforts, de votre envie de garder la ma&#238;trise des &#233;v&#232;nements, de votre capacit&#233; &#224; ne pas perdre de vue ce qui est important pour vous. Les contretemps s'att&#233;nueront en fin d'apr&#232;s-midi mais l'ambiance de la soir&#233;e restera encore un peu &#233;lectrique.</p>
+
+<h4>dimanche 19 mai 2013 9/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e relativement &#233;prouvante, &#233;maill&#233;e de luttes, d'efforts mais heureusement aussi d'appuis providentiels qui vous aideront &#224; vous sortir de cette confusion sans perdre votre dignit&#233;. Soulag&#233;e, vous pourrez alors aborder la soir&#233;e avec un bon &#233;tat d'esprit. Il est m&#234;me possible que vous vous sentiez particuli&#232;rement satisfaite et rayonnante au cours d'une soir&#233;e faisant part belle &#224; l'amiti&#233;. Votre entourage sera inconsciemment attir&#233; par votre bien-&#234;tre et cela vous fera tr&#232;s plaisir.</p>
+
+<h4>lundi 20 mai 2013 1/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e plut&#244;t positive que seul un &#233;v&#232;nement f&#226;cheux pourrait g&#226;cher. Vous vous sentirez beaucoup plus confiante et mature qu'&#224; l'accoutum&#233;e. On vous &#233;coutera, on vous respectera davantage. Si vous avez l'habitude d'h&#233;siter, de ne pas oser suffisamment, le moment est venu de laisser tout &#231;a derri&#232;re vous. "Demandez et vous recevrez". Il est imp&#233;ratif d'en profiter d&#232;s le matin ou en soir&#233;e car l'apr&#232;s-midi est un peu moins favorable.</p>
+
+<h4>mardi 21 mai 2013 2/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une matin&#233;e d&#233;licate en perspective ! Choix &#224; faire n&#233;cessitant discernement et actions efficaces. Pas question de tout reporter. Posez bien les probl&#232;mes, cela vous aidera &#224; agir avec lucidit&#233;. L'apr&#232;s-midi sera diff&#233;rente et tr&#232;s favorable aux amiti&#233;s, aux d&#233;marches, &#224; la diplomatie. Si vous avez l'esprit tranquille apr&#232;s avoir pris les d&#233;cisions qui s'imposaient ce matin, vous r&#233;ussirez bien votre apr&#232;s-midi. Pendant la soir&#233;e votre int&#233;r&#234;t ira davantage aux bons moments de la vie.</p>
+
+<h4>mercredi 22 mai 2013 3/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Superbe contexte vibratoire que seul un &#233;v&#232;nement vraiment f&#226;cheux serait capable de g&#226;cher. Calez-vous sur cette onde et vous aurez la "baraka". Mettez votre conviction dans toutes vos entreprises et vous ne serez pas d&#233;&#231;ue. Les perspectives financi&#232;res et relationnelles seront &#233;galement bonnes aujourd'hui. Profitez-en pour conqu&#233;rir, faire avancer vos affaires. La journ&#233;e s'ach&#232;vera par une soir&#233;e tr&#232;s favorable aux invitations, aux discussions enrichissantes, &#224; la r&#233;flexion, &#224; l'amiti&#233;.</p>
+
+<h4>jeudi 23 mai 2013 4/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Le contexte vibratoire favorise l'organisation, l'ordre, le travail. Concentrez-vous sur ces t&#226;ches simples toute la journ&#233;e. M&#233;fiez-vous de votre &#233;motionnel, assez instable aujourd'hui. Si vous n'y prenez garde, vous risquez de changer d'avis, d'&#234;tre trop admiratif ou trop critique. Prudence. En soir&#233;e, le cycle sera favorable &#224; votre bien-&#234;tre spirituel et physique. D&#233;tendez-vous, faites du sport, prenez de la hauteur.</p>
+
+<h4>vendredi 24 mai 2013 5/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>La matin&#233;e risque de ne pas se d&#233;rouler comme vous l'attendiez. Mais ne soyez pas d&#233;&#231;ue car tout s'arrangera au cours d'une apr&#232;s-midi assez fructueuse et parfois inattendue. Ayez l'esprit souple pour en tirer parti. Profitez de ce cycle positif pour communiquer, entreprendre, n&#233;gocier, solliciter des appuis. Sur votre &#233;lan vous aborderez la soir&#233;e avec une envie de luxe, de bien-&#234;tre, d'ambiance sympathique, de sortie r&#233;ussie. Probabilit&#233; accrue de faire de nouvelles connaissances.</p>
+
+<h4>samedi 25 mai 2013 6/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+</tr></table>
+<p>Une journ&#233;e difficile. Nombreux obstacles et difficult&#233;s de communication avec vos interlocuteurs. Soyez patiente, diplomate. &#201;tablissez les bases d'un dialogue constructif sans incompr&#233;hension. Il y aura aussi des responsabilit&#233;s et des obligations &#224; assumer. Ne vous laissez pas impressionner par toutes ces charges. Agissez avec d&#233;termination et efficacit&#233;. Si tout se passe bien, vous aborderez la soir&#233;e avec s&#233;r&#233;nit&#233; et vous pourrez vous consacrer &#224; vos proches ou amis dans une ambiance agr&#233;able et authentique.</p>
+
+<h4>dimanche 26 mai 2013 7/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+</tr></table>
+<p>Une journ&#233;e d&#233;licate ne favorisant gu&#232;re les actions, les d&#233;marches, l'ardeur. N'essayez pas de provoquer les &#233;v&#232;nements. Jouez plut&#244;t &#224; l'aimant et laissez venir les choses &#224; vous. Si vous savez rester patiente et confiante, la providence vous aidera sans doute. Si au contraire, vous cherchez &#224; forcer, si vous doutez ou si vous entretenez du ressentiment, il est probable que les choses tourneront mal. Prenez du recul, surveillez votre axe et ne vous impatientez pas. Toute autre ambiance en soir&#233;e, favorisant la communication, les relations, l'altruisme.</p>
+
+<h4>lundi 27 mai 2013 8/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+</tr></table>
+<p>Les conditions seront aujourd'hui particuli&#232;rement exigeantes. Nonchalance, passivit&#233;, n&#233;gligence et manque de consistance seront vite sanctionn&#233;s ! Il faudra &#234;tre vigilante, intuitive, faire preuve de pr&#233;cision mais aussi de courage, de combativit&#233; et d'intelligence. Les r&#233;sultats de cette journ&#233;e seront &#224; la hauteur de vos efforts, de votre envie de garder la ma&#238;trise des &#233;v&#232;nements, de votre capacit&#233; &#224; ne pas perdre de vue ce qui est important pour vous. Les contretemps s'att&#233;nueront en fin d'apr&#232;s-midi mais l'ambiance de la soir&#233;e restera encore un peu &#233;lectrique.</p>
+
+<h4>mardi 28 mai 2013 9/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e relativement &#233;prouvante, &#233;maill&#233;e de luttes, d'efforts mais heureusement aussi d'appuis providentiels qui vous aideront &#224; vous sortir de cette confusion sans perdre votre dignit&#233;. Soulag&#233;e, vous pourrez alors aborder la soir&#233;e avec un bon &#233;tat d'esprit. Il est m&#234;me possible que vous vous sentiez particuli&#232;rement satisfaite et rayonnante au cours d'une soir&#233;e faisant part belle &#224; l'amiti&#233;. Votre entourage sera inconsciemment attir&#233; par votre bien-&#234;tre et cela vous fera tr&#232;s plaisir.</p>
+
+<h4>mercredi 29 mai 2013 1/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une journ&#233;e plut&#244;t positive que seul un &#233;v&#232;nement f&#226;cheux pourrait g&#226;cher. Vous vous sentirez beaucoup plus confiante et mature qu'&#224; l'accoutum&#233;e. On vous &#233;coutera, on vous respectera davantage. Si vous avez l'habitude d'h&#233;siter, de ne pas oser suffisamment, le moment est venu de laisser tout &#231;a derri&#232;re vous. "Demandez et vous recevrez". Il est imp&#233;ratif d'en profiter d&#232;s le matin ou en soir&#233;e car l'apr&#232;s-midi est un peu moins favorable.</p>
+
+<h4>jeudi 30 mai 2013 2/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Une matin&#233;e d&#233;licate en perspective ! Choix &#224; faire n&#233;cessitant discernement et actions efficaces. Pas question de tout reporter. Posez bien les probl&#232;mes, cela vous aidera &#224; agir avec lucidit&#233;. L'apr&#232;s-midi sera diff&#233;rente et tr&#232;s favorable aux amiti&#233;s, aux d&#233;marches, &#224; la diplomatie. Si vous avez l'esprit tranquille apr&#232;s avoir pris les d&#233;cisions qui s'imposaient ce matin, vous r&#233;ussirez bien votre apr&#232;s-midi. Pendant la soir&#233;e votre int&#233;r&#234;t ira davantage aux bons moments de la vie.</p>
+
+<h4>vendredi 31 mai 2013 3/8</h4>
+
+<table border="0" style="width:100%; max-width:960px" >
+<colgroup span="17"></colgroup><tr>
+<td>7h</td>
+<td></td>
+<td>9h</td>
+<td></td>
+<td>11h</td>
+<td></td>
+<td>13h</td>
+<td></td>
+<td>15h</td>
+<td></td>
+<td>17h</td>
+<td></td>
+<td>19h</td>
+<td></td>
+<td>21h</td>
+<td></td>
+<td>23h</td>
+</tr><tr>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#336600; color:#336600">&clubs;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#ff0000; color:#ff0000">&diams;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+<td style="background-color:#000000; color:#000000">&spades;</td>
+<td style="background-color:#00cc00; color:#00cc00">&hearts;</td>
+</tr></table>
+<p>Superbe contexte vibratoire que seul un &#233;v&#232;nement vraiment f&#226;cheux serait capable de g&#226;cher. Calez-vous sur cette onde et vous aurez la "baraka". Mettez votre conviction dans toutes vos entreprises et vous ne serez pas d&#233;&#231;ue. Les perspectives financi&#232;res et relationnelles seront &#233;galement bonnes aujourd'hui. Profitez-en pour conqu&#233;rir, faire avancer vos affaires. La journ&#233;e s'ach&#232;vera par une soir&#233;e tr&#232;s favorable aux invitations, aux discussions enrichissantes, &#224; la r&#233;flexion, &#224; l'amiti&#233;.</p>
+
+<hr style="width: 85%" />
+<p>Nous esp&#233;rons que votre analyse num&#233;rologique vous a apport&#233; un &#233;clairage nouveau sur votre personnalit&#233; et votre vie. Nul doute qu'en prenant conscience de vos potentiels et des "vents dominants" que vous allez rencontrer sur votre trajet, vous saurez en tirer avantage pour une meilleure qualit&#233; de vie.</p>
+
+<p>&#201;tude &#233;tablie par Yves Pflieger. Tous droits r&#233;serv&#233;s. &copy; Association fran&#231;aise de num&#233;rologie & Yves Pflieger.</p>
+</body>
+</html>
+
+</body></html>
+
