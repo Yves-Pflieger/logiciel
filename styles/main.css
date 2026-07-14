@@ -38,6 +38,22 @@
   --header-h: 84px;
 }
 
+/*------------police Alsace color: #DC1E14;---------------*/
+  @font-face {
+    font-family: "AlsaceHeart";
+    src: url("../police/AlsaceHeart.woff") format("woff"),
+         url("../police/AlsaceHeart.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+.logo-text {
+    display: inline-block;
+    font-family: "AlsaceHeart", sans-serif;
+    font-size: 20px;
+    color: #E84A5F;
+    line-height: 1;
+}
+
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -591,3 +607,6 @@ h3 { font-size: 1.4rem; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   h1 { font-size: 2.3rem; }
 }
+
+
+
