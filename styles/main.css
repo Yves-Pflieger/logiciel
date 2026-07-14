@@ -38,7 +38,7 @@
   --header-h: 84px;
 }
 
-/*------------police Alsace color: #DC1E14;---------------*/
+/*------------police Alsace color: #DC1E14;  #E84A5F Rouge clair alsacien : #FF6B6B Rouge pastel : #F28A8A---------------*/
   @font-face {
     font-family: "AlsaceHeart";
     src: url("../police/AlsaceHeart.woff") format("woff"),
@@ -50,7 +50,7 @@
     display: inline-block;
     font-family: "AlsaceHeart", sans-serif;
     font-size: 20px;
-    color: #E84A5F;
+    color: #F28A8A;
     line-height: 1;
 }
 
